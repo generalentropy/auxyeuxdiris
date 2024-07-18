@@ -3,6 +3,7 @@ import AppWrapper from "./components/AppWrapper";
 import Header from "./components/Header";
 import Highlights from "./components/Highlights";
 import Menu from "./components/Menu";
+import Tarifs from "./components/Tarifs";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <Highlights />
       <About />
+      <Tarifs />
     </AppWrapper>
   );
 }

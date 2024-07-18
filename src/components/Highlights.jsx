@@ -2,7 +2,7 @@ import { highlightContent } from "../../config/global";
 
 function Highlights() {
   return (
-    <div className="my-10 grid grid-cols-1 gap-10 xl:grid-cols-2">
+    <div className="my-10 grid grid-cols-1 justify-items-center gap-10 xl:grid-cols-2">
       {highlightContent.map((el) => (
         <Element
           title={el.title}
@@ -19,7 +19,7 @@ export default Highlights;
 
 function Element({ title, iconUrl, subtitle }) {
   return (
-    <div className="flex max-w-[800px] text-primary">
+    <div className="flex w-full max-w-[800px] text-primary">
       <div className="flex min-h-[200px] min-w-[200px] items-center justify-center rounded-l-2xl bg-accent">
         <img src={iconUrl} />
       </div>
