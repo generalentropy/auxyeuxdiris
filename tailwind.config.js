@@ -14,6 +14,7 @@ export default {
         accent: "#F9AD19",
         accentDarker: "#DE9B17",
         lightGrey: "#EDEDED",
+        greyDarker: "#C2C5C9",
       },
 
       filter: {

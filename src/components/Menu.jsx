@@ -1,4 +1,4 @@
-const linkStyle = `bg-lightGrey rounded-full px-10 py-3 font-bold text-lg text-primary hover:bg-accent transition-colors hover:text-white`;
+const linkStyle = `bg-lightGrey rounded-full px-10 py-3 font-bold text-lg text-primary hover:bg-greyDarker transition-colors hover:text-white`;
 
 function Menu() {
   return (
