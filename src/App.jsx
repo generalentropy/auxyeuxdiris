@@ -1,8 +1,15 @@
+import AppWrapper from "./components/AppWrapper";
+import Header from "./components/Header";
+import Highlights from "./components/Highlights";
+import Menu from "./components/Menu";
+
 function App() {
   return (
-    <div className="h-screen bg-gray-900 p-12 text-6xl font-bold text-white">
-      Votre expert en extensions de cils depuis 2017
-    </div>
+    <AppWrapper>
+      <Menu />
+      <Header />
+      <Highlights />
+    </AppWrapper>
   );
 }
 
