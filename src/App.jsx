@@ -1,3 +1,4 @@
+import About from "./components/About";
 import AppWrapper from "./components/AppWrapper";
 import Header from "./components/Header";
 import Highlights from "./components/Highlights";
@@ -9,6 +10,7 @@ function App() {
       <Menu />
       <Header />
       <Highlights />
+      <About />
     </AppWrapper>
   );
 }

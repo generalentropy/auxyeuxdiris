@@ -15,6 +15,11 @@ export default {
         accentDarker: "#DE9B17",
         lightGrey: "#EDEDED",
       },
+
+      filter: {
+        "blue-tint":
+          "blur(0) brightness(1) saturate(1.2) sepia(1) hue-rotate(200deg)",
+      },
     },
   },
   future: {
