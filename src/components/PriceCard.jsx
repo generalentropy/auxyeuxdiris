@@ -34,6 +34,18 @@ function PriceCard({ isAccent, flags, title, pill, price }) {
       >
         {price}€
       </div>
+
+      <div
+        className={classNames(
+          "rounded-full px-6 py-2 text-base font-bold text-white",
+          {
+            "bg-primary": isAccent,
+            "bg-accent": !isAccent,
+          },
+        )}
+      >
+        Réserver
+      </div>
     </div>
   );
 }

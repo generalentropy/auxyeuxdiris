@@ -1,7 +1,6 @@
 import Button from "./Button";
 import { headerTextGradient } from "../../config/style";
 
-console.log(headerTextGradient);
 function Header() {
   return (
     <div className="flex h-full max-h-[660px] overflow-hidden rounded-2xl bg-lightGrey bg-[url('/images/hero.svg')] bg-contain bg-right bg-no-repeat">

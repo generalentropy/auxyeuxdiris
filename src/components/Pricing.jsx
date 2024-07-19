@@ -27,7 +27,7 @@ function Pricing() {
         <PriceCard
           isAccent={false}
           flags={["/icons/south-korea.svg"]}
-          title="La pose cil à cil"
+          title="Le volume Russe 3D"
           pill="Classique"
           price={"90"}
         />

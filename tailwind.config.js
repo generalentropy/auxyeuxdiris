@@ -2,7 +2,7 @@ import defaultTheme from "tailwindcss/defaultTheme";
 
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{html,js,jsx,tsx}"],
+  content: ["./index.html", "./src/**/*.{html,js,jsx,tsx}", "./config/*.js"],
   theme: {
     extend: {
       fontFamily: {
