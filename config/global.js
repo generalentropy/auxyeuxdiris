@@ -12,3 +12,22 @@ export const highlightContent = [
       "Praticien diplômé et en formation continue pour être toujours à la pointe de l’innovation.",
   },
 ];
+
+export const priceCardsData = [
+  {
+    title: "La pose cil à cil",
+    flagUrl: ["", ""],
+    isAccent: true,
+    pill: "",
+    price: "70",
+    filling: "",
+  },
+  {
+    title: "La pose mixte",
+    flagUrl: ["", ""],
+    isAccent: true,
+    pill: "",
+    price: "70",
+    filling: "",
+  },
+];

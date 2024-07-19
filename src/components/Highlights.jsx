@@ -3,12 +3,12 @@ import { highlightContent } from "../../config/global";
 function Highlights() {
   return (
     <div className="my-10 grid grid-cols-1 justify-items-center gap-10 xl:grid-cols-2">
-      {highlightContent.map((el) => (
+      {highlightContent.map((el, i) => (
         <Element
           title={el.title}
           iconUrl={el.iconUrl}
           subtitle={el.subtitle}
-          key={el.title}
+          key={i}
         />
       ))}
     </div>
