@@ -1,6 +1,21 @@
 import classNames from "classnames";
+import { wordsPillToHighlight } from "../../config/global";
+
+const highlightWords = (text, words) => {
+  const regex = new RegExp(`(${words.join("|")})`, "gi");
+  const parts = text.split(regex);
+  return parts.map((part, index) =>
+    words.includes(part.toLowerCase()) ? (
+      <strong key={index}>{part}</strong>
+    ) : (
+      part
+    ),
+  );
+};
 
 function PriceCard({ isAccent, flags, title, pill, price }) {
+  const formattedPill = highlightWords(pill, wordsPillToHighlight);
+
   return (
     <div
       className={classNames(
@@ -12,10 +27,13 @@ function PriceCard({ isAccent, flags, title, pill, price }) {
       )}
     >
       <div
-        className={classNames("pt-10 text-4xl font-bold", {
-          "text-white": isAccent,
-          "text-primary": !isAccent,
-        })}
+        className={classNames(
+          "pt-10 text-center text-3xl font-bold lg:text-4xl",
+          {
+            "text-white": isAccent,
+            "text-primary": !isAccent,
+          },
+        )}
       >
         {title}
       </div>
@@ -23,8 +41,8 @@ function PriceCard({ isAccent, flags, title, pill, price }) {
         {flags && <Flags flags={flags} isAccent={isAccent} />}
       </div>
 
-      <div className="rounded-full bg-primary px-4 py-1 text-sm font-semibold text-white">
-        {pill}
+      <div className="rounded-full bg-primary px-4 py-1 text-base font-semibold text-white">
+        {formattedPill}
       </div>
 
       <div

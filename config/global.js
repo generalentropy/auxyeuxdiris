@@ -1,3 +1,5 @@
+export const wordsPillToHighlight = ["léger", "intense"];
+
 export const highlightContent = [
   {
     title: "Produits certifiés",
