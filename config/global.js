@@ -39,7 +39,7 @@ export const cardsData = [
     title: "Le volume Russe 3D",
     flagUrl: ["/icons/russia.svg"],
     isAccent: false,
-    pill: "",
+    pill: "Volume Russe léger",
     price: "90",
     fillingPrice: "60",
   },

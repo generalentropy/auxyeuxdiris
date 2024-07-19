@@ -1,39 +1,21 @@
-import PriceCard from "./PriceCard";
 import SectionTitle from "./SectionTitle";
+import { cardsData } from "../../config/global";
+import CardDispatcher from "./CardDispatcher";
 
 function Pricing() {
   return (
-    <div className="flex w-full flex-col">
+    <div className="flex flex-col">
       <SectionTitle
         title="Prestations & tarifs"
         subtitle="Les différentes prestations que je vous propose."
       />
 
-      <div className="flex min-h-full min-w-full gap-10">
-        <PriceCard
-          isAccent={false}
-          flags={["/icons/south-korea.svg"]}
-          title="La pose cil à cil"
-          pill="Classique"
-          price={"70"}
-          fillingPrice="50"
-        />
-        <PriceCard
-          pill="Cil à cil & Volume Russe léger"
-          isAccent={true}
-          title="La pose mixte"
-          flags={["/icons/south-korea.svg", "/icons/russia.svg"]}
-          price={"80"}
-          fillingPrice="55"
-        />
-        <PriceCard
-          isAccent={false}
-          flags={["/icons/south-korea.svg"]}
-          title="Le volume Russe 3D"
-          pill="Classique"
-          price={"90"}
-          fillingPrice="60"
-        />
+      <div className="flex justify-center">
+        <div className="grid grid-cols-1 justify-items-center gap-10 md:grid-cols-2 lg:grid-cols-3">
+          {cardsData.map((card, i) => (
+            <CardDispatcher card={card} key={i} />
+          ))}
+        </div>
       </div>
     </div>
   );

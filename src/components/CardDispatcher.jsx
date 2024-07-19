@@ -4,12 +4,12 @@ import Remove from "./Remove";
 
 function CardDispatcher({ card }) {
   switch (card.type) {
-    case "presta":
-      return <PriceCard />;
+    case "pose":
+      return <PriceCard card={card} />;
     case "depose":
-      return <Remove />;
+      return <Remove card={card} />;
     case "info":
-      return <InfoCard />;
+      return <InfoCard card={card} />;
     default:
       return null;
   }
