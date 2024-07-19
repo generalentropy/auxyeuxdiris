@@ -11,9 +11,11 @@ export default {
 
       colors: {
         primary: "#132136",
+        primaryLighter: "#2B4773",
         accent: "#F9AD19",
         accentDarker: "#DE9B17",
         lightGrey: "#EDEDED",
+        greyDark: "#C2C5C9",
         greyDarker: "#C2C5C9",
       },
 

@@ -16,6 +16,7 @@ function Pricing() {
           title="La pose cil à cil"
           pill="Classique"
           price={"70"}
+          fillingPrice="50"
         />
         <PriceCard
           pill="Cil à cil & Volume Russe léger"
@@ -23,6 +24,7 @@ function Pricing() {
           title="La pose mixte"
           flags={["/icons/south-korea.svg", "/icons/russia.svg"]}
           price={"80"}
+          fillingPrice="55"
         />
         <PriceCard
           isAccent={false}
@@ -30,6 +32,7 @@ function Pricing() {
           title="Le volume Russe 3D"
           pill="Classique"
           price={"90"}
+          fillingPrice="60"
         />
       </div>
     </div>

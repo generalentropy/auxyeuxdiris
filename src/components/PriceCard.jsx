@@ -13,13 +13,13 @@ const highlightWords = (text, words) => {
   );
 };
 
-function PriceCard({ isAccent, flags, title, pill, price }) {
+function PriceCard({ isAccent, flags, title, pill, price, fillingPrice }) {
   const formattedPill = highlightWords(pill, wordsPillToHighlight);
 
   return (
     <div
       className={classNames(
-        "flex h-[600px] w-[400px] min-w-[320px] flex-col items-center rounded-3xl",
+        "mb-10 flex h-[600px] w-[400px] min-w-[320px] flex-col items-center rounded-3xl",
         {
           "bg-accent": isAccent,
           "bg-lightGrey": !isAccent,
@@ -46,7 +46,7 @@ function PriceCard({ isAccent, flags, title, pill, price }) {
       </div>
 
       <div
-        className={classNames("py-6 text-8xl font-bold", {
+        className={classNames("py-12 text-8xl font-bold", {
           "text-white": isAccent,
         })}
       >
@@ -55,14 +55,26 @@ function PriceCard({ isAccent, flags, title, pill, price }) {
 
       <div
         className={classNames(
-          "rounded-full px-6 py-2 text-base font-bold text-white",
+          "cursor-pointer rounded-full px-6 py-2 text-base font-bold text-white transition-colors",
           {
-            "bg-primary": isAccent,
-            "bg-accent": !isAccent,
+            "hover:bg-primaryLighter bg-primary": isAccent,
+            "bg-accent hover:bg-accentDarker": !isAccent,
           },
         )}
       >
         Réserver
+      </div>
+      <div
+        className={classNames(
+          "mb-8 flex h-full flex-col items-center rounded-3xl p-8 px-8 text-2xl font-bold text-white",
+          {
+            "bg-accentDarker": isAccent,
+            "bg-greyDarker": !isAccent,
+          },
+        )}
+      >
+        <p>Remplissage</p>
+        <p className="text-3xl">{fillingPrice}€</p>
       </div>
     </div>
   );
