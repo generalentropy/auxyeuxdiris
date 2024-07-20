@@ -20,11 +20,11 @@ export default Highlights;
 function Element({ title, iconUrl, subtitle }) {
   return (
     <div className="flex w-full max-w-[800px] text-primary">
-      <div className="flex min-h-[200px] min-w-[200px] items-center justify-center rounded-l-2xl bg-accent">
-        <img src={iconUrl} />
+      <div className="flex min-h-[100px] min-w-[100px] items-center justify-center rounded-l-2xl bg-accent lg:min-h-[200px] lg:min-w-[200px]">
+        <img src={iconUrl} className="h-12 lg:h-auto" />
       </div>
       <div className="flex grow flex-col items-center justify-center rounded-r-3xl bg-lightGrey">
-        <div className="mb-2 text-4xl font-bold">{title}</div>
+        <div className="mb-2 text-xl font-bold sm:text-4xl">{title}</div>
         <div className="max-w-[340px] text-sm">{subtitle}</div>
       </div>
     </div>

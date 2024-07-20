@@ -8,10 +8,16 @@ function MobileMenuOverlay() {
     <div className="fixed z-10 h-screen w-screen bg-primary xl:hidden">
       <nav>
         <div className="flex h-screen w-screen items-center justify-center">
-          <ul className="flex max-h-[400px] flex-col items-center justify-center">
+          <ul className="flex max-h-[400px] flex-col items-center justify-center gap-4">
             <li>
               <a className={linkStyle} href="#about">
-                Prestations & tarifs
+                Prestations
+              </a>
+            </li>
+
+            <li>
+              <a className={linkStyle} href="#about">
+                Tarifs
               </a>
             </li>
             <li>
