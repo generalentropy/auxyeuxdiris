@@ -1,9 +1,14 @@
+import classNames from "classnames";
+
 function Button({ link, text, wrapperStyle, buttonStyle }) {
   return (
-    <div className={`flex ${wrapperStyle ? wrapperStyle : ""}`}>
+    <div className={classNames("flex", wrapperStyle)}>
       <a
         href={`#${link ? link : ""}`}
-        className={`bg-accent rounded-lg px-14 py-4 text-xl font-bold text-white ${buttonStyle ? buttonStyle : ""}`}
+        className={classNames(
+          "rounded-lg bg-accent px-8 py-3 font-bold text-white sm:px-14 sm:py-4 sm:text-xl",
+          buttonStyle,
+        )}
       >
         {text}
       </a>

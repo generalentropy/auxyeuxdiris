@@ -7,8 +7,8 @@ function MobileMenuAndLogo() {
   const handleOpenMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
   return (
-    <div className="relative flex justify-center border border-red-500 xl:hidden">
-      <div className="my-8 flex w-full items-center justify-center border">
+    <div className="relative flex justify-center xl:hidden">
+      <div className="my-8 flex w-full items-center justify-center">
         <div
           className={classNames("fixed right-4 z-20 cursor-pointer", {
             "text-white": isMobileMenuOpen,
