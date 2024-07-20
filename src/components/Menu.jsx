@@ -4,7 +4,7 @@ function Menu() {
   return (
     <nav>
       <div>
-        <ul className="flex items-center justify-between py-12">
+        <ul className="hidden items-center justify-between py-12 xl:flex">
           <li>
             <a className={linkStyle} href="#about">
               Prestations & tarifs

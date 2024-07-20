@@ -1,8 +1,4 @@
-// import { useState } from "react";
-
 function About() {
-  // const [isBioOpen, setIsBioOpen] = useState(false);
-
   return (
     <div className="mb-10 flex h-full max-h-[570px] rounded-2xl">
       <div className="flex min-w-[530px] flex-col items-center justify-around rounded-l-2xl bg-accent">

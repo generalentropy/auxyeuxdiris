@@ -4,6 +4,7 @@ import AppWrapper from "./components/AppWrapper";
 import Header from "./components/Header";
 import Highlights from "./components/Highlights";
 import Menu from "./components/Menu";
+import MobileMenuAndLogo from "./components/MobileMenuAndLogo";
 import MobileMenuOverlay from "./components/MobileMenuOverlay";
 import Pricing from "./components/Pricing";
 
@@ -13,6 +14,7 @@ function App() {
   return (
     <AppWrapper>
       {isMobileMenuOpen && <MobileMenuOverlay />}
+      <MobileMenuAndLogo />
       <Menu />
       <Header />
       <Highlights />
