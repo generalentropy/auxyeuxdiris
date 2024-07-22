@@ -12,7 +12,7 @@ function MobileMenuAndLogo() {
         <div
           className={classNames("fixed right-4 z-20 cursor-pointer", {
             "text-white": isMobileMenuOpen,
-            "text-primary": !isMobileMenuOpen,
+            "rounded-md bg-white bg-opacity-50 text-primary": !isMobileMenuOpen,
           })}
           onClick={handleOpenMenu}
         >
