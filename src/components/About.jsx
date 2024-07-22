@@ -7,13 +7,13 @@ function About() {
         </div>
 
         <div className="flex flex-col items-center">
-          <div className="pt-6 text-2xl font-extrabold text-primary xl:text-4xl">
+          <div className="pt-6 text-2xl font-extrabold text-primary sm:text-4xl">
             José Chédotal
           </div>
-          <div className="text-xl font-light italic text-white xl:text-3xl">
+          <div className="text-xl font-light italic text-white sm:text-2xl xl:text-3xl">
             Lash Stylist
           </div>
-          <div className="py-4 text-lg font-bold text-[#B48321] xl:text-xl">
+          <div className="py-4 text-lg font-bold text-[#B48321] sm:text-xl">
             Cil à Cil & Volume Russe
           </div>
         </div>
