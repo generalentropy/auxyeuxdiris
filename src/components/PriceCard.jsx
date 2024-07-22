@@ -22,7 +22,7 @@ function PriceCard({ card }) {
   return (
     <div
       className={classNames(
-        "flex h-[600px] w-[400px] min-w-[320px] flex-col items-center rounded-3xl py-10",
+        "flex h-[600px] w-[400px] min-w-[320px] flex-col items-center rounded-2xl pt-10",
         {
           "bg-accent": isAccent,
           "bg-lightGrey": !isAccent,
@@ -65,10 +65,11 @@ function PriceCard({ card }) {
       >
         Réserver
       </div>
-      <div className="">
+      <div className="flex-grow"></div>
+      <div className="w-full p-10">
         <div
           className={classNames(
-            "flex flex-col items-center rounded-3xl text-2xl font-bold text-white",
+            "pricing flex flex-col items-center rounded-2xl p-4 text-2xl font-bold text-white",
             {
               "bg-accentDarker": isAccent,
               "bg-greyDarker": !isAccent,

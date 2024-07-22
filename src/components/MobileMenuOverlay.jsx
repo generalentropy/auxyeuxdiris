@@ -1,7 +1,7 @@
 import { useLockBodyScroll } from "@uidotdev/usehooks";
 
 function MobileMenuOverlay() {
-  const linkStyle = `font-bold text-4xl lg:text-5xl text-white`;
+  const linkStyle = `relative text-4xl w-fit block after:block after:content-[''] after:absolute after:h-[6px] after:bg-accent after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left text-white font-bold`;
   useLockBodyScroll();
 
   return (
