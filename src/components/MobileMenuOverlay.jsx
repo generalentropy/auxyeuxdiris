@@ -5,39 +5,37 @@ function MobileMenuOverlay() {
   useLockBodyScroll();
 
   return (
-    <div className="fixed z-10 h-screen w-screen bg-primary xl:hidden">
+    <div className="fixed z-10 flex h-screen w-screen items-center justify-center bg-primary xl:hidden">
       <nav>
-        <div className="flex h-screen w-screen items-center justify-center">
-          <ul className="flex max-h-[400px] flex-col items-center justify-center gap-4">
-            <li>
-              <a className={linkStyle} href="#about">
-                Prestations
-              </a>
-            </li>
+        <ul className="flex max-h-[400px] flex-col items-center justify-center gap-4">
+          <li>
+            <a className={linkStyle} href="#about">
+              Prestations
+            </a>
+          </li>
 
-            <li>
-              <a className={linkStyle} href="#about">
-                Tarifs
-              </a>
-            </li>
-            <li>
-              <a className={linkStyle} href="#offers">
-                FAQ
-              </a>
-            </li>
+          <li>
+            <a className={linkStyle} href="#about">
+              Tarifs
+            </a>
+          </li>
+          <li>
+            <a className={linkStyle} href="#offers">
+              FAQ
+            </a>
+          </li>
 
-            <li>
-              <a href="#form" className={linkStyle}>
-                Contact
-              </a>
-            </li>
-            <li>
-              <a href="#" className={linkStyle}>
-                Réalisation
-              </a>
-            </li>
-          </ul>
-        </div>
+          <li>
+            <a href="#form" className={linkStyle}>
+              Contact
+            </a>
+          </li>
+          <li>
+            <a href="#" className={linkStyle}>
+              Réalisation
+            </a>
+          </li>
+        </ul>
       </nav>
     </div>
   );

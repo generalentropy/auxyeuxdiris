@@ -12,15 +12,17 @@ function App() {
   const { isMobileMenuOpen } = useGlobalContext();
 
   return (
-    <AppWrapper>
+    <>
       {isMobileMenuOpen && <MobileMenuOverlay />}
-      <MobileMenuAndLogo />
-      <Menu />
-      <Header />
-      <Highlights />
-      <About />
-      <Pricing />
-    </AppWrapper>
+      <AppWrapper>
+        <MobileMenuAndLogo />
+        <Menu />
+        <Header />
+        <Highlights />
+        <About />
+        <Pricing />
+      </AppWrapper>
+    </>
   );
 }
 
