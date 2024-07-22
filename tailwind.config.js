@@ -9,6 +9,11 @@ export default {
         sans: ['"Poppins"', ...defaultTheme.fontFamily.sans],
       },
 
+      screens: {
+        xs: "375px",
+        ...defaultTheme.screens,
+      },
+
       colors: {
         primary: "#132136",
         primaryLighter: "#2B4773",

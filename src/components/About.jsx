@@ -1,7 +1,7 @@
 function About() {
   return (
     <div className="mb-10 flex h-full max-h-[570px] rounded-2xl">
-      <div className="flex min-w-[530px] flex-col items-center justify-around rounded-l-2xl bg-accent">
+      <div className="flex flex-col items-center justify-around rounded-l-2xl bg-accent xl:min-w-[530px]">
         <div className="text-6xl font-bold text-white">Qui suis-je ?</div>
 
         <div className="flex flex-col items-center">
@@ -18,7 +18,9 @@ function About() {
 
         <InstaLink />
       </div>
-      <div className="grow rounded-r-3xl bg-lightGrey bg-[url('/images/jose.jpg')] bg-cover bg-no-repeat"></div>
+      <div className="grow overflow-hidden rounded-r-3xl">
+        <img src="/images/jose.jpg" className="h-full w-full object-cover" />
+      </div>
     </div>
   );
 }
