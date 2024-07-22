@@ -22,7 +22,7 @@ function PriceCard({ card }) {
   return (
     <div
       className={classNames(
-        "xs:h-[600px] xs:w-[400px] flex h-auto w-[320px] flex-col items-center rounded-2xl pt-10",
+        "flex h-auto w-[320px] flex-col items-center rounded-2xl pt-10 xs:h-[600px] xs:w-[400px]",
         {
           "bg-accent": isAccent,
           "bg-lightGrey": !isAccent,
