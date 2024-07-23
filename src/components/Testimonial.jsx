@@ -1,38 +1,14 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-
 function Testimonial() {
   return (
     <div>
-      <div className="mb-10 flex items-center justify-center rounded-2xl bg-lightGrey px-6 py-12 text-6xl font-bold text-primary">
-        Elles <img src="/icons/heart.svg" alt="heart icon" className="px-4" />{" "}
+      <div className="mb-10 flex items-center justify-center rounded-2xl bg-lightGrey px-6 py-12 text-xl font-bold text-primary xs:text-2xl sm:text-4xl lg:text-5xl">
+        Elles{" "}
+        <img
+          src="/icons/heart.svg"
+          alt="heart icon"
+          className="h-8 px-2 xs:h-9 sm:h-12 lg:h-14 lg:px-4"
+        />{" "}
         Aux Yeux d&lsquo;Iris
-      </div>
-
-      <div>
-        <Swiper
-          spaceBetween={50}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
-          breakpoints={{
-            640: {
-              width: 640,
-              slidesPerView: 1,
-            },
-
-            768: {
-              width: 768,
-              slidesPerView: 2,
-            },
-          }}
-        >
-          <SwiperSlide className="flex h-full bg-accent">Slide 1</SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
-          <SwiperSlide>Slide 5</SwiperSlide>
-          <SwiperSlide>Slide 5</SwiperSlide>
-        </Swiper>
       </div>
     </div>
   );
