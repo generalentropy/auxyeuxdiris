@@ -9,7 +9,7 @@ function Remove({ card }) {
   return (
     <div
       className={classNames(
-        "flex h-[600px] w-full max-w-[400px] flex-col items-center rounded-2xl p-5 py-10",
+        "flex w-full max-w-[400px] flex-col items-center rounded-2xl p-5 py-10 md:max-h-[600px]",
         {
           "bg-accent": isAccent,
           "bg-lightGrey": !isAccent,
@@ -48,7 +48,7 @@ function Remove({ card }) {
         {price}€
       </div>
 
-      <div className="p-4 text-lg xs:p-8 xs:text-xl">{formattedText}</div>
+      <div className="text-lg xs:px-2 xs:text-xl">{formattedText}</div>
     </div>
   );
 }

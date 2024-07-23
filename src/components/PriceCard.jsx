@@ -9,7 +9,7 @@ function PriceCard({ card }) {
   return (
     <div
       className={classNames(
-        "flex h-[600px] w-full max-w-[400px] flex-col items-center rounded-2xl pt-10",
+        "flex w-full max-w-[400px] flex-col items-center rounded-2xl pt-10 md:min-h-[600px]",
         {
           "bg-accent": isAccent,
           "bg-lightGrey": !isAccent,
@@ -28,12 +28,12 @@ function PriceCard({ card }) {
         {flagUrl && <Flags flags={flagUrl} isAccent={isAccent} />}
       </div>
 
-      <div className="rounded-full bg-primary px-5 py-1 text-sm font-semibold text-white xs:text-base">
+      <div className="rounded-full bg-primary px-5 py-1 text-center text-sm font-semibold text-white xs:text-base">
         {formattedPill}
       </div>
 
       <div
-        className={classNames("py-8 text-8xl font-bold", {
+        className={classNames("py-8 text-7xl font-bold xs:text-8xl", {
           "text-white": isAccent,
           "text-primary": !isAccent,
         })}

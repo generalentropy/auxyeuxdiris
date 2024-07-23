@@ -8,7 +8,7 @@ function InfoCard({ card }) {
   const formattedText = HighlightWords(text, wordsPillToHighlight);
 
   return (
-    <div className="flex h-[600px] min-h-full w-full max-w-[400px] flex-col items-center rounded-2xl bg-lightGrey py-10">
+    <div className="flex min-h-full w-full max-w-[400px] flex-col items-center rounded-2xl bg-lightGrey py-10 md:max-h-[600px]">
       <div
         className={classNames("text-center text-3xl font-bold lg:text-4xl", {
           "text-white": isAccent,
