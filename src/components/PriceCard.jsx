@@ -17,10 +17,13 @@ function PriceCard({ card }) {
       )}
     >
       <div
-        className={classNames("text-center text-3xl font-bold lg:text-4xl", {
-          "text-white": isAccent,
-          "text-primary": !isAccent,
-        })}
+        className={classNames(
+          "px-2 text-center text-3xl font-bold lg:text-4xl",
+          {
+            "text-white": isAccent,
+            "text-primary": !isAccent,
+          },
+        )}
       >
         {title}
       </div>

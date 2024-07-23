@@ -35,12 +35,12 @@ function Remove({ card }) {
         </div>
       </div>
 
-      <div className="rounded-full bg-primary px-4 py-1 text-center text-sm font-semibold text-white xs:text-base">
+      <div className="rounded-full bg-primary px-2 py-1 text-center text-sm font-semibold text-white xs:px-4 xs:text-base">
         {pill}
       </div>
 
       <div
-        className={classNames("py-8 text-8xl font-bold", {
+        className={classNames("py-8 text-7xl font-bold xs:text-8xl", {
           "text-white": isAccent,
           "text-primary": !isAccent,
         })}

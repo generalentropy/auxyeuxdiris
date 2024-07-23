@@ -2,6 +2,8 @@ import SectionTitle from "./SectionTitle";
 import { cardsData } from "../../config/global";
 import CardDispatcher from "./CardDispatcher";
 
+import { reminderText } from "../../config/global";
+
 function Pricing() {
   return (
     <div className="flex flex-col">
@@ -17,8 +19,22 @@ function Pricing() {
           ))}
         </div>
       </div>
+      <Reminder text={reminderText} />
     </div>
   );
 }
 
 export default Pricing;
+
+function Reminder({ text }) {
+  return (
+    <div className="mb-10 flex flex-col items-center justify-center gap-2 rounded-2xl bg-accent p-4 sm:flex-row lg:gap-4 lg:p-8">
+      <span>
+        <img src="/icons/info.svg" alt="" className="h-16 sm:h-20" />
+      </span>
+      <span className="text-sm font-normal text-white xs:font-semibold lg:text-lg">
+        {text}
+      </span>
+    </div>
+  );
+}

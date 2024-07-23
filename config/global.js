@@ -5,6 +5,9 @@ export const wordsPillToHighlight = [
   "3 et 5 semaines",
 ];
 
+export const reminderText =
+  "Si le délai de 5 semaines (35 jours) est dépassé, le tarif d'une pose complète sera appliqué, quel que soit le nombre d'extensions de cils restant.";
+
 export const highlightContent = [
   {
     title: "Produits certifiés",
