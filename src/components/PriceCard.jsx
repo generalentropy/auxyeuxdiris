@@ -69,7 +69,7 @@ function PriceCard({ card }) {
       <div className="w-full p-10">
         <div
           className={classNames(
-            "pricing flex flex-col items-center rounded-2xl p-4 text-2xl font-bold text-white",
+            "pricing flex flex-col items-center gap-2 rounded-2xl p-4 text-2xl font-bold text-white",
             {
               "bg-accentDarker": isAccent,
               "bg-greyDarker": !isAccent,
@@ -77,7 +77,7 @@ function PriceCard({ card }) {
           )}
         >
           <p>Remplissage</p>
-          <p className="text-3xl">{fillingPrice}€</p>
+          <p className="text-4xl">{fillingPrice}€</p>
         </div>
       </div>
     </div>
