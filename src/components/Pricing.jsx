@@ -28,9 +28,9 @@ export default Pricing;
 
 function Reminder({ text }) {
   return (
-    <div className="mb-10 flex flex-col items-center justify-center gap-2 rounded-2xl bg-accent p-4 sm:flex-row lg:gap-4 lg:p-8">
+    <div className="mb-10 flex flex-col items-center justify-center gap-3 rounded-2xl bg-accent p-6 sm:flex-row lg:gap-4 lg:p-8">
       <span>
-        <img src="/icons/info.svg" alt="" className="h-16 sm:h-20" />
+        <img src="/icons/info.svg" alt="" className="h-12 sm:h-24" />
       </span>
       <span className="text-sm font-normal text-white xs:font-semibold lg:text-lg">
         {text}
