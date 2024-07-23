@@ -22,7 +22,7 @@ function PriceCard({ card }) {
   return (
     <div
       className={classNames(
-        "flex h-auto w-[320px] flex-col items-center rounded-2xl pt-10 xs:h-[600px] xs:w-[400px]",
+        "flex h-auto w-full max-w-[400px] flex-col items-center rounded-2xl pt-10",
         {
           "bg-accent": isAccent,
           "bg-lightGrey": !isAccent,
@@ -41,7 +41,7 @@ function PriceCard({ card }) {
         {flagUrl && <Flags flags={flagUrl} isAccent={isAccent} />}
       </div>
 
-      <div className="rounded-full bg-primary px-4 py-1 text-base font-semibold text-white">
+      <div className="rounded-full bg-primary px-5 py-1 text-base font-semibold text-white">
         {formattedPill}
       </div>
 
@@ -56,7 +56,7 @@ function PriceCard({ card }) {
 
       <div
         className={classNames(
-          "cursor-pointer rounded-full px-6 py-2 text-base font-bold text-white transition-colors",
+          "cursor-pointer rounded-full px-6 py-2 text-base font-bold text-white transition-colors sm:text-xl",
           {
             "bg-primary hover:bg-primaryLighter": isAccent,
             "bg-accent hover:bg-accentDarker": !isAccent,
