@@ -7,6 +7,7 @@ import Menu from "./components/Menu";
 import MobileMenuAndLogo from "./components/MobileMenuAndLogo";
 import MobileMenuOverlay from "./components/MobileMenuOverlay";
 import Pricing from "./components/Pricing";
+import Testimonial from "./components/Testimonial";
 
 function App() {
   const { isMobileMenuOpen } = useGlobalContext();
@@ -21,6 +22,7 @@ function App() {
         <Highlights />
         <About />
         <Pricing />
+        <Testimonial />
       </AppWrapper>
     </>
   );
