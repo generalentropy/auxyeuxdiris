@@ -60,6 +60,7 @@ export const cardsData = [
     price: "20",
   },
   {
+    isAccent: false,
     title: "Qu’est-ce que le remplissage ?",
     type: "info",
     text: "Le remplissage des extensions de cils est un entretien à réaliser entre 3 et 5 semaines après la pose initiale. Cette procédure consiste à nettoyer la base des cils, retirer les extensions gênantes, et appliquer de nouvelles extensions sur les cils naturels qui n'en ont pas encore. Cela permet de maintenir une bonne rotation entre les cils tombés et les nouvelles extensions, assurant ainsi un aspect toujours impeccable.",

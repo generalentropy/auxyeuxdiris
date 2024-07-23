@@ -1,6 +1,15 @@
-function Remove() {
+import classNames from "classnames";
+
+function Remove({ isAccent }) {
   return (
-    <div className="flex h-[600px] w-[400px] min-w-[320px] flex-col items-center rounded-2xl bg-lightGrey py-10"></div>
+    <div
+      className={classNames("h-[600px] w-full max-w-[400px] rounded-2xl", {
+        "bg-accent": isAccent,
+        "bg-lightGrey": !isAccent,
+      })}
+    >
+      <div className="flex-grow"></div>
+    </div>
   );
 }
 
