@@ -1,7 +1,11 @@
 import classNames from "classnames";
+import HighlightWords from "./HighlightWords";
+import { wordsPillToHighlight } from "../../config/global";
 
 function Remove({ card }) {
-  const { title, isAccent, iconUrl, pill, price } = card;
+  const { title, isAccent, iconUrl, pill, price, text } = card;
+
+  const formattedText = HighlightWords(text, wordsPillToHighlight);
   return (
     <div
       className={classNames(
@@ -43,7 +47,8 @@ function Remove({ card }) {
       >
         {price}€
       </div>
-      <div className="flex-grow"></div>
+
+      <div className="p-4 text-lg xs:p-8 xs:text-xl">{formattedText}</div>
     </div>
   );
 }

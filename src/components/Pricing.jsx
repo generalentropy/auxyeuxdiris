@@ -4,7 +4,7 @@ import CardDispatcher from "./CardDispatcher";
 
 function Pricing() {
   return (
-    <div className="flex flex-col border border-red-500">
+    <div className="flex flex-col">
       <SectionTitle
         title="Prestations & tarifs"
         subtitle="Les différentes prestations que je vous propose."

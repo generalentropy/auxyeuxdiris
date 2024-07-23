@@ -1,4 +1,9 @@
-export const wordsPillToHighlight = ["léger", "intense"];
+export const wordsPillToHighlight = [
+  "léger",
+  "intense",
+  "gratuite",
+  "3 et 5 semaines",
+];
 
 export const highlightContent = [
   {
@@ -57,6 +62,7 @@ export const cardsData = [
     title: "Dépose",
     iconUrl: "/icons/bin.svg",
     pill: "Dépose de vos anciennes extensions",
+    text: "La dépose est gratuite si la pose initiale a été réalisée par mes soins. Le tarif de 20€ s'applique pour les déposes effectuées sur des poses extérieures.",
     price: "20",
   },
   {
