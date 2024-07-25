@@ -109,7 +109,7 @@ export const testimonialData = [
   },
   {
     content:
-      "Cela fait maintenant 3 ans que je suis adepte des poses de José ! Je suis toujours entièrement satisfaite de par son professionalisme, sa bienveillance et sa sympathie ! Le temps passe super vite (discussions et playlist au top) et nous ressortons plus que satisfaite du résultat ! Bye bye le recourbe cils et mascara [...]",
+      "Cela fait maintenant 3 ans que je suis adepte des poses de José ! Je suis toujours entièrement satisfaite de par son professionalisme, sa bienveillance et sa sympathie ! Le temps passe super vite (discussions et playlist au top) et nous ressortons plus que satisfaite du résultat ! [...]",
     name: "Clara Busson",
     picture: "clarab.png",
     isRounded: true,
