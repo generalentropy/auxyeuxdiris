@@ -19,6 +19,7 @@ export default {
         primaryLighter: "#2B4773",
         accent: "#F9AD19",
         accentDarker: "#DE9B17",
+        accentGradient: "#BB8C02",
         lightGrey: "#EDEDED",
         greyDark: "#C2C5C9",
         greyDarker: "#C2C5C9",
