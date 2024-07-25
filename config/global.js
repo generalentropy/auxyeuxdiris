@@ -97,7 +97,7 @@ export const testimonialData = [
     name: "Anneg44",
     picture: "anne.jpg",
     isRounded: true,
-    content: "Très professionnel et très doux. Une adresse à garde.",
+    content: "Très professionnel et très doux. Une adresse à garder.",
     link: "https://maps.app.goo.gl/envYwphcL3whgnEu5",
   },
   {
