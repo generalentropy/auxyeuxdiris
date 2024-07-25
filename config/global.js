@@ -111,9 +111,25 @@ export const testimonialData = [
   },
   {
     name: "Anneg44",
-    picture: "anne.jpg",
-    isRounded: true,
+    picture: "anne.png",
+    isRounded: false,
     content: "Très professionnel et très doux. Une adresse à garder.",
     link: "https://maps.app.goo.gl/envYwphcL3whgnEu5",
+  },
+  {
+    name: "Clarisse Pilarczyk",
+    picture: "clarisse.jpg",
+    isRounded: true,
+    content:
+      "Pose de cils parfaite. Le praticien est très sympathique . Je conseille vivement cet institut.",
+    link: "https://maps.app.goo.gl/dKHdVcsoFkfTdnZS8",
+  },
+
+  {
+    name: "Anna-maria Varela",
+    picture: "anna.jpg",
+    isRounded: true,
+    content: "Devenu un rituels, un excellent travail de pro. Merci pour tout.",
+    link: "https://maps.app.goo.gl/ghxjP16HwoW87N7h8",
   },
 ];
