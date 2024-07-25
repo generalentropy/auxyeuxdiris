@@ -16,8 +16,8 @@ function Testimonial() {
       <Carousel />
 
       <div className="my-5 flex items-center justify-center rounded-2xl bg-accent py-10">
-        <div className="flex items-center gap-2 whitespace-nowrap rounded-full bg-white px-6 py-1 text-xl font-bold text-primary">
-          <span className="align-text-bottom text-5xl font-medium text-accent">
+        <div className="flex items-center gap-2 whitespace-nowrap rounded-full bg-white px-4 py-1 text-lg font-bold text-primary xs:px-6 xs:text-xl">
+          <span className="align-text-bottom text-4xl font-medium text-accent xs:text-5xl">
             +
           </span>
           d&lsquo;avis sur Maps{" "}
