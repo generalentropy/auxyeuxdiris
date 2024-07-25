@@ -27,7 +27,7 @@ export function Carousel() {
       >
         {testimonialData.map((card, i) => (
           <SwiperSlide key={i} className="flex justify-center">
-            <div className="mb-12 flex h-[420px] w-[310px] select-none flex-col rounded-2xl bg-lightGrey px-4 py-8 text-primary">
+            <div className="mb-12 flex h-[420px] w-[300px] select-none flex-col rounded-2xl bg-lightGrey px-5 py-8 text-primary">
               <div className="flex flex-col items-center justify-center">
                 <div className="flex flex-col items-center justify-center">
                   <img
