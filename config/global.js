@@ -75,3 +75,44 @@ export const cardsData = [
     text: "Le remplissage des extensions de cils est un entretien à réaliser entre 3 et 5 semaines après la pose initiale. Cette procédure consiste à nettoyer la base des cils, retirer les extensions gênantes, et appliquer de nouvelles extensions sur les cils naturels qui n'en ont pas encore. Cela permet de maintenir une bonne rotation entre les cils tombés et les nouvelles extensions, assurant ainsi un aspect toujours impeccable.",
   },
 ];
+
+export const testimonialData = [
+  {
+    content:
+      "Professionnel, consciencieux, à l'écoute et de bons conseils. Le résultat est naturel, les extensions tiennent super bien on voit qu'elles sont de bonnes qualités et c'est toujours un moment agréable d'aller là-bas 🤗 je recommande !!",
+    name: "Clara Lauth",
+    isRounded: true,
+    picture: "clara.jpg",
+    link: "https://maps.app.goo.gl/Mw1kLTcectGdoLx76",
+  },
+  {
+    content:
+      "Résultat époustouflant! Je suis ravie! Le travail est parfait, très naturel! De plus, très bonne communication avec ce professionnel. Merci!",
+    name: "Vilina VOUKSTA",
+    picture: "vilina.png",
+    isRounded: false,
+    link: "https://maps.app.goo.gl/DHdJg9T553L78ZLX9",
+  },
+  {
+    name: "Anneg44",
+    picture: "anne.jpg",
+    isRounded: true,
+    content: "Très professionnel et très doux. Une adresse à garde.",
+    link: "https://maps.app.goo.gl/envYwphcL3whgnEu5",
+  },
+  {
+    content:
+      "Je recommande les yeux fermés ce professionnel de la pose de cil ! Minutieux, reactif et de très bons conseils ! Voilà maintenant plusieurs années que je donne toute ma confiance à son travail ! \"Essayer c'est l'adopter\"",
+    name: "Charlotte Da Costa",
+    picture: "charlotte.jpg",
+    isRounded: true,
+  },
+  {
+    content:
+      "Cela fait maintenant 3 ans que je suis adepte des poses de José ! Je suis toujours entièrement satisfaite de par son professionalisme, sa bienveillance et sa sympathie ! Le temps passe super vite (discussions et playlist au top) et nous ressortons plus que satisfaite du résultat ! Bye bye le recourbe cils et mascara [...]",
+    name: "Clara Busson",
+    picture: "clarab.png",
+    isRounded: true,
+    link: "https://maps.app.goo.gl/R3dAfZ3nXTKAsSCJ9",
+  },
+];

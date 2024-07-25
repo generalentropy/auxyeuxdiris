@@ -1,10 +1,4 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-
-import { Pagination } from "swiper/modules";
+import Carousel from "./Carousel";
 
 function Testimonial() {
   return (
@@ -18,51 +12,10 @@ function Testimonial() {
         />{" "}
         Aux Yeux d&lsquo;Iris
       </div>
+
+      <Carousel />
     </div>
   );
 }
 
 export default Testimonial;
-
-function Carousel() {
-  return (
-    <div className="flex w-full items-center justify-center border border-red-500">
-      <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
-        pagination={{
-          clickable: true,
-          el: ".swiper-pagination",
-          type: "bullets",
-        }}
-        modules={[Pagination]}
-        className="googleTestimonial"
-        centeredSlides={true}
-        centeredSlidesBounds={true}
-        loop={true}
-        grabCursor={true}
-      >
-        <SwiperSlide className="flex items-center justify-center">
-          <div className="flex h-[300px] w-[300px] items-center justify-center rounded-2xl bg-lightGrey">
-            Slide 1
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="flex items-center justify-center">
-          <div className="flex h-[300px] w-[300px] items-center justify-center rounded-2xl bg-lightGrey">
-            Slide 2
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="flex items-center justify-center">
-          <div className="flex h-[300px] w-[300px] items-center justify-center rounded-2xl bg-lightGrey">
-            Slide 3
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="flex items-center justify-center">
-          <div className="flex h-[300px] w-[300px] items-center justify-center rounded-2xl bg-lightGrey">
-            Slide 4
-          </div>
-        </SwiperSlide>
-      </Swiper>
-    </div>
-  );
-}
