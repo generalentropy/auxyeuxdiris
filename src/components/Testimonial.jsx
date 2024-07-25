@@ -14,6 +14,16 @@ function Testimonial() {
       </div>
 
       <Carousel />
+
+      <div className="my-5 flex items-center justify-center rounded-2xl bg-accent py-10">
+        <div className="flex items-center gap-2 whitespace-nowrap rounded-full bg-white px-6 py-1 text-xl font-bold text-primary">
+          <span className="align-text-bottom text-5xl font-medium text-accent">
+            +
+          </span>
+          d&lsquo;avis sur Maps{" "}
+          <img src="/icons/maps-logo.svg" alt="" className="ml-2" />
+        </div>
+      </div>
     </div>
   );
 }
