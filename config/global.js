@@ -79,6 +79,22 @@ export const cardsData = [
 export const testimonialData = [
   {
     content:
+      "Je recommande les yeux fermés ce professionnel de la pose de cil ! Minutieux, reactif et de très bons conseils ! Voilà maintenant plusieurs années que je donne toute ma confiance à son travail ! \"Essayer c'est l'adopter\"",
+    name: "Charlotte Da Costa",
+    picture: "charlotte.jpg",
+    isRounded: true,
+    link: "https://maps.app.goo.gl/DqAJFEN9ZtdLn5CX8",
+  },
+  {
+    content:
+      "Cela fait maintenant 3 ans que je suis adepte des poses de José ! Je suis toujours entièrement satisfaite de par son professionalisme, sa bienveillance et sa sympathie ! Le temps passe super vite (discussions et playlist au top) et nous ressortons plus que satisfaite du résultat ! [...]",
+    name: "Clara Busson",
+    picture: "clarab.png",
+    isRounded: true,
+    link: "https://maps.app.goo.gl/R3dAfZ3nXTKAsSCJ9",
+  },
+  {
+    content:
       "Professionnel, consciencieux, à l'écoute et de bons conseils. Le résultat est naturel, les extensions tiennent super bien on voit qu'elles sont de bonnes qualités et c'est toujours un moment agréable d'aller là-bas 🤗 je recommande !!",
     name: "Clara Lauth",
     isRounded: true,
@@ -99,20 +115,5 @@ export const testimonialData = [
     isRounded: true,
     content: "Très professionnel et très doux. Une adresse à garder.",
     link: "https://maps.app.goo.gl/envYwphcL3whgnEu5",
-  },
-  {
-    content:
-      "Je recommande les yeux fermés ce professionnel de la pose de cil ! Minutieux, reactif et de très bons conseils ! Voilà maintenant plusieurs années que je donne toute ma confiance à son travail ! \"Essayer c'est l'adopter\"",
-    name: "Charlotte Da Costa",
-    picture: "charlotte.jpg",
-    isRounded: true,
-  },
-  {
-    content:
-      "Cela fait maintenant 3 ans que je suis adepte des poses de José ! Je suis toujours entièrement satisfaite de par son professionalisme, sa bienveillance et sa sympathie ! Le temps passe super vite (discussions et playlist au top) et nous ressortons plus que satisfaite du résultat ! [...]",
-    name: "Clara Busson",
-    picture: "clarab.png",
-    isRounded: true,
-    link: "https://maps.app.goo.gl/R3dAfZ3nXTKAsSCJ9",
   },
 ];
