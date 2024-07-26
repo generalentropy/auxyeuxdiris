@@ -16,7 +16,12 @@ function MobileMenuAndLogo() {
           })}
           onClick={handleOpenMenu}
         >
-          <Hamburger rounded size={36} lineWidth={4} />
+          <Hamburger
+            rounded
+            size={36}
+            lineWidth={4}
+            label={`${isMobileMenuOpen ? "Fermer le menu" : "Afficher le menu"}`}
+          />
         </div>
         <img
           src="/images/logo_auxyeuxdiris.svg"

@@ -21,7 +21,11 @@ function About() {
         <InstaLink />
       </div>
       <div className="grow overflow-hidden rounded-b-2xl sm:rounded-none sm:rounded-r-2xl">
-        <img src="/images/jose.jpg" className="h-full w-full object-cover" />
+        <img
+          src="/images/jose.jpg"
+          className="h-full w-full object-cover"
+          alt="Photo de José"
+        />
       </div>
     </div>
   );

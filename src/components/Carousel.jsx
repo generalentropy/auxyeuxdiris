@@ -52,7 +52,12 @@ export function Carousel() {
                   />
 
                   <div className="absolute -bottom-1 left-3 transition-colors hover:text-accentDarker">
-                    <a href={card.link} target="_blank" rel="noopener">
+                    <a
+                      href={card.link}
+                      target="_blank"
+                      rel="noopener"
+                      aria-label="Voir le commentaire sur Maps"
+                    >
                       <HiExternalLink size={25} />
                     </a>
                   </div>
