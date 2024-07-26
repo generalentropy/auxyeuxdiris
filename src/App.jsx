@@ -1,6 +1,7 @@
 import { useGlobalContext } from "../contexts/useGlobalContext";
 import About from "./components/About";
 import AppWrapper from "./components/AppWrapper";
+import Faq from "./components/Faq";
 import Header from "./components/Header";
 import Highlights from "./components/Highlights";
 import Menu from "./components/Menu";
@@ -23,6 +24,7 @@ function App() {
         <About />
         <Pricing />
         <Testimonial />
+        <Faq />
       </AppWrapper>
     </>
   );
