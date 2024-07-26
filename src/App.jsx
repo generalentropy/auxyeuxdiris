@@ -1,3 +1,4 @@
+import { GiNanoBot } from "react-icons/gi";
 import { useGlobalContext } from "../contexts/useGlobalContext";
 import About from "./components/About";
 import AppWrapper from "./components/AppWrapper";
@@ -9,6 +10,7 @@ import MobileMenuAndLogo from "./components/MobileMenuAndLogo";
 import MobileMenuOverlay from "./components/MobileMenuOverlay";
 import Pricing from "./components/Pricing";
 import Testimonial from "./components/Testimonial";
+import NavigationMap from "./components/NavigationMap";
 
 function App() {
   const { isMobileMenuOpen } = useGlobalContext();
@@ -25,6 +27,7 @@ function App() {
         <Pricing />
         <Testimonial />
         <Faq />
+        <NavigationMap />
       </AppWrapper>
     </>
   );
