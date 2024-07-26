@@ -19,6 +19,7 @@ function Menu() {
             <img
               src="/images/logo_auxyeuxdiris.svg"
               alt="Logo Aux Yeux d'Iris"
+              className="w-38"
             />
           </li>
           <li>
