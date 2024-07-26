@@ -1,3 +1,5 @@
+export const googleMapsLink = "https://maps.app.goo.gl/9vbBcxskN4h8nJLSA";
+
 export const wordsPillToHighlight = [
   "léger",
   "intense",
