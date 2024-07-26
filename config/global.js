@@ -1,5 +1,16 @@
 export const googleMapsLink = "https://maps.app.goo.gl/9vbBcxskN4h8nJLSA";
 
+export const geolocationCoords = {
+  lat: 47.430238723421134,
+  lng: -2.125832854067893,
+};
+
+export const appButtonsData = [
+  { name: "Maps", iconUrl: "/icons/maps.svg" },
+  { name: "Waze", iconUrl: "/icons/waze.svg" },
+  { name: "Plans", iconUrl: "/icons/plans.svg" },
+];
+
 export const wordsPillToHighlight = [
   "léger",
   "intense",
