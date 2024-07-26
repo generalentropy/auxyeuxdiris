@@ -26,7 +26,7 @@ function MobileMenuAndLogo() {
         <img
           src="/images/logo_auxyeuxdiris.svg"
           alt="Logo Aux Yeux d'Iris"
-          className="w-32"
+          className="h-24"
         />
       </div>
     </div>
