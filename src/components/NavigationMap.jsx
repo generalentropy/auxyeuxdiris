@@ -10,6 +10,7 @@ function NavigationMap() {
         zoom={13}
         scrollWheelZoom={false}
         className="z-10 h-full w-full"
+        dragging={false}
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
