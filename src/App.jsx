@@ -1,4 +1,3 @@
-import { GiNanoBot } from "react-icons/gi";
 import { useGlobalContext } from "../contexts/useGlobalContext";
 import About from "./components/About";
 import AppWrapper from "./components/AppWrapper";

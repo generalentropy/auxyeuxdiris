@@ -5,7 +5,7 @@ function MobileMenuOverlay() {
   useLockBodyScroll();
 
   return (
-    <div className="fixed z-10 flex h-screen w-screen items-center justify-center bg-primary xl:hidden">
+    <div className="fixed z-20 flex h-screen w-screen items-center justify-center bg-primary xl:hidden">
       <nav>
         <ul className="flex max-h-[400px] flex-col items-center justify-center gap-4">
           <li>

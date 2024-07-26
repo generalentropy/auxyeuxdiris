@@ -10,7 +10,7 @@ function MobileMenuAndLogo() {
     <div className="relative flex justify-center xl:hidden">
       <div className="my-8 flex w-full items-center justify-center">
         <div
-          className={classNames("fixed right-4 z-20 cursor-pointer", {
+          className={classNames("fixed right-4 z-30 cursor-pointer", {
             "text-white": isMobileMenuOpen,
             "rounded-md bg-white bg-opacity-50 text-primary": !isMobileMenuOpen,
           })}
