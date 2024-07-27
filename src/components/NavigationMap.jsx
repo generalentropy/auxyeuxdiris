@@ -32,6 +32,10 @@ function NavigationMap() {
           </Marker>
         </MapContainer>
       </div>
+      <div className="text-md mb-10 flex justify-center rounded-2xl bg-lightGrey px-2 py-10 text-center font-bold text-primary md:text-xl">
+        Cliquez sur l&lsquo;icone pour charger l’adresse dans votre application
+        GPS préférée
+      </div>
       <div className="mb-10 flex flex-wrap justify-center gap-10">
         {appButtonsData.map((btn, i) => (
           <AppButton key={i} name={btn.name} iconUrl={btn.iconUrl} />
