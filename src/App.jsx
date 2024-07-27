@@ -11,6 +11,7 @@ import Pricing from "./components/Pricing";
 import Testimonial from "./components/Testimonial";
 import NavigationMap from "./components/NavigationMap";
 import Instagram from "./components/Instagram";
+import OpeningHours from "./components/OpeningHours";
 
 function App() {
   const { isMobileMenuOpen } = useGlobalContext();
@@ -29,6 +30,7 @@ function App() {
         <Faq />
         <Instagram />
         <NavigationMap />
+        <OpeningHours />
       </AppWrapper>
     </>
   );
