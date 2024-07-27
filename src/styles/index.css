@@ -10,7 +10,19 @@
   filter: hue-rotate(175deg) saturate(300%) brightness(200%);
 }
 
+/* style custom elfsight insta module */
 .eapps-instagram-feed-posts-item-image-wrapper,
 .eapps-instagram-feed-posts-item-overlay {
   border-radius: 16px;
+}
+
+.eapps-instagram-feed-posts-grid-load-more {
+  padding: 30px;
+  display: flex;
+  border-radius: 999px !important;
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 18px !important;
+  justify-content: center;
+  align-items: center;
 }
