@@ -9,3 +9,8 @@
 .leaflet-marker-icon {
   filter: hue-rotate(175deg) saturate(300%) brightness(200%);
 }
+
+.eapps-instagram-feed-posts-item-image-wrapper,
+.eapps-instagram-feed-posts-item-overlay {
+  border-radius: 16px;
+}

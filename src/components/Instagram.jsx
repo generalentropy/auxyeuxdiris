@@ -15,7 +15,7 @@ function Instagram() {
   }, []);
 
   return (
-    <div className="w-full">
+    <div className="relative flex w-full">
       <div
         className="elfsight-app-ef718ee8-4160-49c7-9cd7-e0be49550d64"
         data-elfsight-app-lazy
