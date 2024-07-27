@@ -5,7 +5,7 @@ function SectionTitle({ title, subtitle }) {
         {title}
       </div>
       {subtitle && (
-        <div className="text-center text-sm font-light md:text-base lg:text-xl">
+        <div className="mx-3 text-center text-sm font-light md:text-base lg:text-xl">
           {subtitle}
         </div>
       )}
