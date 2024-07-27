@@ -13,7 +13,7 @@ function About() {
           <div className="text-xl font-light italic text-white sm:text-2xl xl:text-3xl">
             Lash Stylist
           </div>
-          <div className="py-4 text-lg font-bold text-[#B48321] sm:text-xl">
+          <div className="text-accentDarkest py-4 text-lg font-bold sm:text-xl">
             Cil à Cil & Volume Russe
           </div>
         </div>
