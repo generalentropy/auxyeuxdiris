@@ -1,11 +1,11 @@
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import { appButtonsData, geolocationCoords } from "../../config/global";
 import { isMobile } from "react-device-detect";
+import { buildGpsLink } from "../../utils/helpers";
 
 function NavigationMap() {
   const { lat, lng } = geolocationCoords;
   const target = [lat, lng];
-
   return (
     <>
       <div className="mb-10 flex items-center justify-center gap-4 rounded-2xl bg-lightGrey py-10 text-2xl font-bold text-primary sm:text-3xl lg:text-5xl">
@@ -44,13 +44,21 @@ function NavigationMap() {
 export default NavigationMap;
 
 function AppButton({ iconUrl, name }) {
-  console.log(iconUrl, name);
+  const url = buildGpsLink(name, geolocationCoords);
+
   return (
-    <div className="flex h-[200px] w-[200px] flex-col items-center justify-center rounded-2xl border-8 border-white bg-accent shadow-xl">
-      <div>
-        <img src={iconUrl} alt="" className="py-4" />
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener"
+      aria-label={`Ouvrir l'adresse dans ${name}`}
+    >
+      <div className="flex h-[200px] w-[200px] flex-col items-center justify-center rounded-2xl border-8 border-white bg-accent shadow-xl transition-colors hover:bg-accentDarker">
+        <div>
+          <img src={iconUrl} alt="" className="py-4" />
+        </div>
+        <div className="text-3xl font-bold text-white">{name}</div>
       </div>
-      <div className="text-3xl font-bold text-white">{name}</div>
-    </div>
+    </a>
   );
 }

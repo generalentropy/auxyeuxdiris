@@ -19,11 +19,6 @@ function MobileMenuOverlay() {
               Tarifs
             </a>
           </li>
-          <li>
-            <a className={linkStyle} href="#offers">
-              FAQ
-            </a>
-          </li>
 
           <li>
             <a href="#form" className={linkStyle}>
@@ -32,7 +27,17 @@ function MobileMenuOverlay() {
           </li>
           <li>
             <a href="#" className={linkStyle}>
+              Nous trouver
+            </a>
+          </li>
+          <li>
+            <a href="#" className={linkStyle}>
               Réalisation
+            </a>
+          </li>
+          <li>
+            <a className={linkStyle} href="#offers">
+              FAQ
             </a>
           </li>
         </ul>
