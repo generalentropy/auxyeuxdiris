@@ -5,6 +5,8 @@ export const geolocationCoords = {
   lng: -2.125832854067893,
 };
 
+export const GPSdestinationName = "Aux Yeux d'Iris";
+
 export const appButtonsData = [
   { name: "Maps", iconUrl: "/icons/maps.svg" },
   { name: "Waze", iconUrl: "/icons/waze.svg" },

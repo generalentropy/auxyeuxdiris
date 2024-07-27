@@ -1,5 +1,9 @@
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
-import { appButtonsData, geolocationCoords } from "../../config/global";
+import {
+  appButtonsData,
+  geolocationCoords,
+  GPSdestinationName,
+} from "../../config/global";
 import { isMobile } from "react-device-detect";
 import { buildGpsLink } from "../../utils/helpers";
 
@@ -44,7 +48,7 @@ function NavigationMap() {
 export default NavigationMap;
 
 function AppButton({ iconUrl, name }) {
-  const url = buildGpsLink(name, geolocationCoords);
+  const url = buildGpsLink(name, geolocationCoords, GPSdestinationName);
 
   return (
     <a

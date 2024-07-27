@@ -6,14 +6,15 @@ export function triggerFeedbackVibration(duration = 20) {
   }
 }
 
-export function buildGpsLink(name, location) {
-  switch (name.toLowerCase()) {
+export function buildGpsLink(serviceName, location, destinationName) {
+  const encodedName = encodeURIComponent(destinationName);
+  switch (serviceName.toLowerCase()) {
     case "waze":
-      return `https://waze.com/ul?ll=${location.lat},${location.lng}&navigate=yes`;
+      return `https://waze.com/ul?ll=${location.lat},${location.lng}&navigate=yes&q=${encodedName}`;
     case "maps":
-      return `https://www.google.com/maps/dir/?api=1&destination=${location.lat},${location.lng}`;
+      return `https://www.google.com/maps/dir/?api=1&destination=${encodedName}&destination_place_id=${location.lat},${location.lng}`;
     case "plans":
-      return `http://maps.apple.com/?daddr=${location.lat},${location.lng}`;
+      return `http://maps.apple.com/?daddr=${encodedName}&daddr=${location.lat},${location.lng}`;
     default:
       return "#";
   }
