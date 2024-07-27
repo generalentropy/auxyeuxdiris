@@ -10,6 +10,7 @@ import MobileMenuOverlay from "./components/MobileMenuOverlay";
 import Pricing from "./components/Pricing";
 import Testimonial from "./components/Testimonial";
 import NavigationMap from "./components/NavigationMap";
+import Instagram from "./components/Instagram";
 
 function App() {
   const { isMobileMenuOpen } = useGlobalContext();
@@ -26,6 +27,7 @@ function App() {
         <Pricing />
         <Testimonial />
         <Faq />
+        <Instagram />
         <NavigationMap />
       </AppWrapper>
     </>
