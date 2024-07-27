@@ -1,9 +1,5 @@
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
-import {
-  appButtonsData,
-  geolocationCoords,
-  GPSdestinationName,
-} from "../../config/global";
+import { appButtonsData, geolocationCoords } from "../../config/global";
 import { isMobile } from "react-device-detect";
 import { buildGpsLink } from "../../utils/helpers";
 
@@ -48,7 +44,7 @@ function NavigationMap() {
 export default NavigationMap;
 
 function AppButton({ iconUrl, name }) {
-  const url = buildGpsLink(name, geolocationCoords, GPSdestinationName);
+  const url = buildGpsLink(name, geolocationCoords);
 
   return (
     <a
@@ -57,7 +53,7 @@ function AppButton({ iconUrl, name }) {
       rel="noopener"
       aria-label={`Ouvrir l'adresse dans ${name}`}
     >
-      <div className="flex h-[200px] w-[200px] flex-col items-center justify-center rounded-2xl border-8 border-white bg-accent shadow-xl transition-colors hover:bg-accentDarker">
+      <div className="flex h-[200px] w-[200px] flex-col items-center justify-center rounded-2xl border-8 border-white bg-accent shadow-xl transition hover:-translate-y-2 hover:bg-accentDarker">
         <div>
           <img src={iconUrl} alt="" className="py-4" />
         </div>
