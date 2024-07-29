@@ -1,3 +1,4 @@
+import Accordion from "./Accordion";
 import SectionTitle from "./SectionTitle";
 
 function Faq() {
@@ -8,6 +9,8 @@ function Faq() {
           title={`Foire aux questions`}
           subtitle={`Retrouvez ci-dessous les questions fréquemment posées par nos clientes`}
         />
+
+        <Accordion />
       </div>
     </>
   );
