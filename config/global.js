@@ -11,6 +11,16 @@ export const appButtonsData = [
   { name: "Plans", iconUrl: "/icons/plans.svg" },
 ];
 
+export const hours = [
+  { day: "lundi", open: true, opening: "12:00", closing: "19:00" },
+  { day: "mardi", open: false, opening: "", closing: "" },
+  { day: "mercredi", open: true, opening: "12:00", closing: "19:00" },
+  { day: "jeudi", open: true, opening: "12:00", closing: "19:00" },
+  { day: "vendredi", open: true, opening: "12:00", closing: "19:00" },
+  { day: "samedi", open: true, opening: "12:00", closing: "19:00" },
+  { day: "dimanche", open: false, opening: "", closing: "" },
+];
+
 export const wordsPillToHighlight = [
   "léger",
   "intense",
