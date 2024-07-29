@@ -2,6 +2,7 @@ import { FaRegCalendarCheck } from "react-icons/fa6";
 import { hours } from "../../config/global";
 import classNames from "classnames";
 import { capitalizeFirstLetter } from "../../utils/helpers";
+import { FaCircleInfo } from "react-icons/fa6";
 
 function OpeningHours() {
   return (
@@ -17,6 +18,13 @@ function OpeningHours() {
           <DaysAndHours openingTime={el} key={el} />
         ))}
       </div>
+
+      <div className="flex justify-center pb-10">
+        <span className="flex items-center justify-center gap-2 rounded-2xl bg-primary px-6 py-5 text-center text-sm font-semibold text-white sm:px-10">
+          <FaCircleInfo size={20} className="hidden sm:block" />
+          Uniquement sur RDV et sans accompagnant.
+        </span>
+      </div>
     </>
   );
 }
@@ -27,16 +35,16 @@ function DaysAndHours({ openingTime }) {
   const { day, opening, closing, open } = openingTime;
 
   return (
-    <div className="flex w-full justify-center gap-4">
+    <div className="flex w-full justify-center gap-4 sm:gap-6">
       <div
         className={classNames(
-          "flex w-full max-w-[200px] items-center justify-center rounded-2xl px-2 py-4 font-bold text-white",
+          "flex w-full max-w-[200px] items-center justify-center rounded-2xl px-2 py-4 font-bold text-white sm:py-5",
           { "bg-accent": open, "bg-primary": !open },
         )}
       >
         {capitalizeFirstLetter(day)}
       </div>
-      <div className="flex w-full max-w-[400px] items-center justify-center rounded-2xl bg-lightGrey px-2 py-4 font-bold text-primary">
+      <div className="flex w-full max-w-[400px] items-center justify-center rounded-2xl bg-lightGrey px-2 py-4 font-bold text-primary sm:py-5">
         <span>{open ? `${opening} - ${closing}` : "Fermé"}</span>
       </div>
     </div>
