@@ -5,6 +5,26 @@ export const geolocationCoords = {
   lng: -2.125832854067893,
 };
 
+export const faqData = [
+  {
+    question: "Qu'est-ce que l'extension de cils ?",
+    answer:
+      "C'est une méthode sud-coréenne datant des années 90, permettant d'allonger, étoffer et courber la base ciliaire, à l'aide de prothèses adaptées à la forme du cil naturel. Ces prothèses (extensions) sont donc collées sur chacun de vos cils naturels adultes, dans le prolongement de celui-ci, à environ un demi millimètre de votre paupière.",
+  },
+  {
+    question:
+      "Ce qu'il faut savoir avant votre premier RDV pour une pose d'extensions de cils",
+    answer:
+      "C'est une méthode sud-coréenne datant des années 90, permettant d'allonger, étoffer et courber la base ciliaire, à l'aide de prothèses adaptées à la forme du cil naturel. Ces prothèses (extensions) sont donc collées sur chacun de vos cils naturels adultes, dans le prolongement de celui-ci, à environ un demi millimètre de votre paupière.",
+  },
+  {
+    question:
+      "Ce qu'il faut savoir avant votre premier RDV pour une pose d'extensions de cils",
+    answer:
+      "C'est une méthode sud-coréenne datant des années 90, permettant d'allonger, étoffer et courber la base ciliaire, à l'aide de prothèses adaptées à la forme du cil naturel. Ces prothèses (extensions) sont donc collées sur chacun de vos cils naturels adultes, dans le prolongement de celui-ci, à environ un demi millimètre de votre paupière.",
+  },
+];
+
 export const appButtonsData = [
   { name: "Maps", iconUrl: "/icons/maps.svg" },
   { name: "Waze", iconUrl: "/icons/waze.svg" },

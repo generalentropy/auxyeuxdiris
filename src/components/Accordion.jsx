@@ -1,45 +1,43 @@
 import classNames from "classnames";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { faqData } from "../../config/global";
 
 function Accordion() {
   return (
-    <div className="mb-10 flex justify-center">
-      <AccordionItem />{" "}
+    <div className="mb-10 flex flex-col justify-center">
+      {faqData.map((item, i) => (
+        <AccordionItem question={item.question} answer={item.answer} key={i} />
+      ))}
     </div>
   );
 }
 
 export default Accordion;
 
-function AccordionItem() {
+function AccordionItem({ question, answer }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col gap-2">
       <div
         className={classNames(
-          "flex cursor-pointer select-none rounded-t-2xl bg-accent px-4 py-6 text-xl font-semibold text-white",
-          { "rounded-b-2xl": !isOpen },
+          "flex cursor-pointer select-none rounded-b-2xl rounded-t-2xl bg-accent px-4 py-6 text-xl font-semibold text-white",
         )}
         onClick={() => setIsOpen(!isOpen)}
       >
-        Qu&lsquo;est-ce que l&lsquo;extension de cils ?
+        {question}
       </div>
       <motion.div
         className="overflow-hidden"
         initial={{ height: 0 }}
-        animate={{ height: isOpen ? "auto" : 0 }}
+        animate={{
+          height: isOpen ? "auto" : 0,
+          marginBottom: isOpen ? "10px" : 0,
+        }}
         transition={{ duration: 0.2, ease: "easeInOut" }}
       >
-        <div className="rounded-b-2xl bg-lightGrey px-4 py-6">
-          C&lsquo;est une méthode sud-coréenne datant des années 90, permettant
-          d&lsquo;allonger, étoffer et courber la base ciliaire, à l&lsquo;aide
-          de prothèses adaptées à la forme du cil naturel. Ces prothèses
-          (extensions) sont donc collées sur chacun de vos cils naturels
-          adultes, dans le prolongement de celui-ci, à environ un demi
-          millimètre de votre paupière.
-        </div>
+        <div className="rounded-2xl bg-lightGrey px-4 py-6">{answer}</div>
       </motion.div>
     </div>
   );
