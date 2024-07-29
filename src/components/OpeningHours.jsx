@@ -15,7 +15,7 @@ function OpeningHours() {
       </div>
       <div className="flex flex-col justify-center gap-4 pb-10">
         {hours.map((el) => (
-          <DaysAndHours openingTime={el} key={el} />
+          <DaysAndHours openingTime={el} key={el.day} />
         ))}
       </div>
 

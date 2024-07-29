@@ -16,13 +16,13 @@ function Instagram() {
 
   return (
     <>
-      <div className="mb-10 flex flex-col items-center justify-center rounded-2xl border bg-lightGrey py-5 text-primary sm:py-8 lg:flex-row lg:gap-4 lg:py-10">
+      <div className="mb-10 flex flex-col items-center justify-center rounded-2xl border bg-lightGrey py-5 text-primary sm:py-8 lg:flex-row lg:gap-6 lg:py-10">
         <span className="bg-gradient-to-r from-[#5B51D8] via-[#E1306C] to-[#FCAF45] bg-clip-text py-1 text-lg font-bold text-transparent xs:text-xl sm:text-3xl md:text-4xl lg:py-2 lg:text-5xl">
           Suivez-nous sur instagram !
         </span>
 
         <a href="https://www.instagram.com/lash_viking/">
-          <div className="mt-2 flex items-center justify-center rounded-full bg-gradient-to-r from-[#5B51D8] via-[#E1306C] to-[#FCAF45] px-8 py-2 text-lg font-bold text-white lg:mt-0 lg:px-12 lg:py-3 lg:text-xl">
+          <div className="mb-2 mt-2 flex items-center justify-center rounded-full bg-gradient-to-r from-[#5B51D8] via-[#E1306C] to-[#FCAF45] px-8 py-2 text-lg font-bold text-white transition-colors hover:hue-rotate-30 lg:mb-0 lg:mt-0 lg:px-12 lg:py-3 lg:text-xl">
             @auxyeuxdiris
           </div>
         </a>
