@@ -7,7 +7,12 @@ function Accordion() {
   return (
     <div className="mb-10 flex flex-col justify-center">
       {faqData.map((item, i) => (
-        <AccordionItem question={item.question} answer={item.answer} key={i} />
+        <AccordionItem
+          question={item.question}
+          answer={item.answer}
+          key={i}
+          list={item.list}
+        />
       ))}
     </div>
   );
@@ -15,7 +20,7 @@ function Accordion() {
 
 export default Accordion;
 
-function AccordionItem({ question, answer }) {
+function AccordionItem({ question, answer, list }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -26,7 +31,7 @@ function AccordionItem({ question, answer }) {
         )}
         onClick={() => setIsOpen(!isOpen)}
       >
-        {question}
+        <p>{question}</p>
       </div>
       <motion.div
         className="overflow-hidden"
@@ -37,7 +42,16 @@ function AccordionItem({ question, answer }) {
         }}
         transition={{ duration: 0.2, ease: "easeInOut" }}
       >
-        <div className="rounded-2xl bg-lightGrey px-4 py-6">{answer}</div>
+        <div className="rounded-2xl bg-lightGrey px-4 py-6">
+          {answer && answer}
+          {Array.isArray(list) &&
+            list.length > 0 &&
+            list.map((el, i) => (
+              <div className="mb-2 text-primary" key={i}>
+                👉 {el}
+              </div>
+            ))}
+        </div>
       </motion.div>
     </div>
   );

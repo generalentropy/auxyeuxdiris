@@ -14,8 +14,16 @@ export const faqData = [
   {
     question:
       "Ce qu'il faut savoir avant votre premier RDV pour une pose d'extensions de cils",
-    answer:
-      "C'est une méthode sud-coréenne datant des années 90, permettant d'allonger, étoffer et courber la base ciliaire, à l'aide de prothèses adaptées à la forme du cil naturel. Ces prothèses (extensions) sont donc collées sur chacun de vos cils naturels adultes, dans le prolongement de celui-ci, à environ un demi millimètre de votre paupière.",
+    list: [
+      "Les photos présentées ne forment en aucun cas un catalogue : chaque base ciliaire étant variable, une même prestation peut donner un effet différent selon la cliente.",
+      "Il est nécessaire de se présenter au RDV parfaitement démaquillée : en cas de maquillage encore présent le RDV sera annulé.",
+      "Les accompagnants (enfants, conjoints, animaux, amis...) ne sont pas acceptés lors du RDV, quelle que soit la raison, afin de garantir le calme et la concentration nécessaire pour ce type de prestation.",
+      "Les retards de plus de 20 minutes annuleront ipso facto le RDV.",
+      "Je ne réponds pas aux messages en écriture texto, ou sans aucun effort sur l'orthographe",
+      "RDV non honoré (sans prévenir en amont) = Blacklist, et ce quelles que soient les raisons invoquées",
+      "Pour les prises de RDV remplissage : pensez à anticiper! L’agenda étant particulièrement chargé, il est de votre ressort de prévoir vos RDV. Pour rappel, le délai maximum pour bénéficier de la tarification « remplissage » est 5 semaines (35 jours)",
+      "L’extension de cil n’est pas adaptée au maquillage au niveau des yeux, quel qu'il soit. ",
+    ],
   },
   {
     question:
