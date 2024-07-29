@@ -20,6 +20,7 @@ function AccordionItem() {
       <div
         className={classNames(
           "flex cursor-pointer select-none rounded-t-2xl bg-accent px-4 py-6 text-xl font-semibold text-white",
+          { "rounded-b-2xl": !isOpen },
         )}
         onClick={() => setIsOpen(!isOpen)}
       >
