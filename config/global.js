@@ -41,6 +41,22 @@ export const faqData = [
       "Hypersensibilité des yeux",
     ],
   },
+  {
+    question: "Combien de temps durent les extensions de cils ?",
+    answer:
+      "Il s'agit de revenir toutes les 3 à 5 semaines afin de garder l'effet fourni de votre regard, et assurer une bonne rotation entre cils tombés et extensions neuves.",
+  },
+  {
+    question: "Combien prendre soin de ses extensions cils ?",
+    answer:
+      " L'hygiène de vie a évidemment un rôle prépondérant dans la durée de vie des extensions. Les recommandations principales sont : ",
+    list: [
+      "Dans les 48h suivant la pose d'extensions, éviter tout contact avec eau et vapeur",
+      "L’extension de cil n’est pas faite pour être couplée à un maquillage, quel qu’il soit.",
+      "Utiliser quotidiennement la brosse fournie lors de chaque RDV afin de discipliner délicatement vos extensions",
+      "Quelques évidences : pas de recourbe-cils, ré-haussement, teinture, éviter un maximum de se frotter les yeux et évidemment pas de mascara !",
+    ],
+  },
 ];
 
 export const appButtonsData = [
