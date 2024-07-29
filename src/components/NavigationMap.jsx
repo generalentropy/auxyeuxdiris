@@ -15,7 +15,7 @@ function NavigationMap() {
       <div className="mb-10 h-[600px] w-full overflow-hidden rounded-2xl">
         <MapContainer
           center={target}
-          zoom={13}
+          zoom={12}
           scrollWheelZoom={false}
           className="z-10 h-full w-full"
           dragging={isMobile ? false : true}
