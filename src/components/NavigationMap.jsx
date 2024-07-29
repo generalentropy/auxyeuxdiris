@@ -57,11 +57,17 @@ function AppButton({ iconUrl, name }) {
       rel="noopener"
       aria-label={`Ouvrir l'adresse dans ${name}`}
     >
-      <div className="flex h-[100px] w-[100px] flex-col items-center justify-center rounded-2xl border-8 border-white bg-accent shadow-xl transition hover:-translate-y-2 hover:bg-accentDarker md:h-[200px] md:w-[200px]">
+      <div className="flex h-[100px] w-[100px] flex-col items-center justify-center rounded-2xl border-8 border-white bg-accent shadow-xl transition hover:-translate-y-2 hover:bg-accentDarker sm:h-[150px] sm:w-[150px] md:h-[200px] md:w-[200px]">
         <div>
-          <img src={iconUrl} alt="" className="mt-1 h-10 md:h-auto md:py-4" />
+          <img
+            src={iconUrl}
+            alt=""
+            className="mt-1 h-10 sm:h-16 md:h-auto md:py-4"
+          />
         </div>
-        <div className="font-bold text-white md:text-3xl">{name}</div>
+        <div className="font-bold text-white sm:text-xl md:text-3xl">
+          {name}
+        </div>
       </div>
     </a>
   );

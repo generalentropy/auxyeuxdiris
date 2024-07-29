@@ -20,7 +20,7 @@ function OpeningHours() {
       </div>
 
       <div className="flex justify-center pb-10">
-        <span className="flex items-center justify-center gap-2 rounded-2xl bg-primary px-6 py-5 text-center text-sm font-semibold text-white sm:px-10">
+        <span className="flex items-center justify-center gap-2 rounded-2xl bg-primary px-6 py-5 text-center text-sm font-semibold text-white sm:px-10 sm:py-8">
           <FaCircleInfo size={20} className="hidden sm:block" />
           Uniquement sur RDV et sans accompagnant.
         </span>
