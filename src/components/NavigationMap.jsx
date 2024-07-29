@@ -36,7 +36,7 @@ function NavigationMap() {
         Cliquez sur l&lsquo;icone pour charger l’adresse dans votre application
         GPS préférée
       </div>
-      <div className="mb-10 flex flex-wrap justify-center gap-5 md:gap-10">
+      <div className="mb-10 flex flex-wrap justify-center gap-4 md:gap-10">
         {appButtonsData.map((btn, i) => (
           <AppButton key={i} name={btn.name} iconUrl={btn.iconUrl} />
         ))}
@@ -59,7 +59,7 @@ function AppButton({ iconUrl, name }) {
     >
       <div className="flex h-[100px] w-[100px] flex-col items-center justify-center rounded-2xl border-8 border-white bg-accent shadow-xl transition hover:-translate-y-2 hover:bg-accentDarker md:h-[200px] md:w-[200px]">
         <div>
-          <img src={iconUrl} alt="" className="mt-1 h-10 md:py-4" />
+          <img src={iconUrl} alt="" className="mt-1 h-10 md:h-auto md:py-4" />
         </div>
         <div className="font-bold text-white md:text-3xl">{name}</div>
       </div>
