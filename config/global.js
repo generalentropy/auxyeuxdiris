@@ -27,9 +27,19 @@ export const faqData = [
   },
   {
     question:
-      "Ce qu'il faut savoir avant votre premier RDV pour une pose d'extensions de cils",
+      "Existe-t-il des contre-indications à porter des extensions de cils ?",
     answer:
-      "C'est une méthode sud-coréenne datant des années 90, permettant d'allonger, étoffer et courber la base ciliaire, à l'aide de prothèses adaptées à la forme du cil naturel. Ces prothèses (extensions) sont donc collées sur chacun de vos cils naturels adultes, dans le prolongement de celui-ci, à environ un demi millimètre de votre paupière.",
+      "Il est déconseillé de faire des extensions aux personnes souffrant de : ",
+    list: [
+      "Conjonctivites",
+      "Chimiothérapie",
+      "Rehaussement et teinture de cils datant d'il y a moins d'un mois",
+      "Chirurgie des yeux de moins de 3 mois",
+      "Syndrome des yeux secs",
+      "Alopécie des cils",
+      "Allergies oculaires",
+      "Hypersensibilité des yeux",
+    ],
   },
 ];
 

@@ -43,7 +43,7 @@ function AccordionItem({ question, answer, list }) {
         transition={{ duration: 0.2, ease: "easeInOut" }}
       >
         <div className="rounded-2xl bg-lightGrey px-4 py-6 lg:p-12">
-          {answer && <p>{answer}</p>}
+          {answer && <p className={classNames({ "pb-4": list })}>{answer}</p>}
           {Array.isArray(list) && list.length > 0 && (
             <ul>
               {list.map((el, i) => (
