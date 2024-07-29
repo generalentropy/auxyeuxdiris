@@ -42,12 +42,15 @@ function AccordionItem({ question, answer, list }) {
         }}
         transition={{ duration: 0.2, ease: "easeInOut" }}
       >
-        <div className="rounded-2xl bg-lightGrey px-4 py-6">
+        <div className="rounded-2xl bg-lightGrey px-4 py-6 lg:p-12">
           {answer && <p>{answer}</p>}
           {Array.isArray(list) && list.length > 0 && (
             <ul>
               {list.map((el, i) => (
-                <li className="mb-2 text-sm text-primary xs:text-base" key={i}>
+                <li
+                  className="mb-2 text-sm text-primary xs:text-base lg:mb-4"
+                  key={i}
+                >
                   👉 {el}
                 </li>
               ))}
