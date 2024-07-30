@@ -4,7 +4,7 @@ import { LuMailQuestion } from "react-icons/lu";
 import { useState } from "react";
 import { web3FormPublicAccessKey } from "../../config/global";
 import { ThreeDots } from "react-loader-spinner";
-import { IoSend } from "react-icons/io5";
+import { RiMailSendLine } from "react-icons/ri";
 import classNames from "classnames";
 
 function Contact() {
@@ -49,7 +49,7 @@ function Contact() {
       />
 
       <div className="mb-10 flex justify-center text-primary">
-        <p className="max-w-[600px] text-center text-sm md:text-base lg:text-lg">
+        <p className="max-w-[600px] px-4 text-center text-sm md:text-base lg:text-lg">
           Vous souhaitez prendre un rendez-vous&nbsp;? Vous avez des
           questions&nbsp;? Contactez-moi dès maintenant.
         </p>
@@ -70,7 +70,7 @@ function Contact() {
               type="text"
               name="Nom et prénom :"
               placeholder="Nom & prénom"
-              className="h-[60px] w-full rounded-lg border border-slate-300 pl-4 placeholder:text-sm placeholder:italic placeholder:opacity-70"
+              className="h-[40px] w-full rounded-lg border border-slate-300 pl-4 placeholder:text-sm placeholder:italic placeholder:opacity-70 lg:h-[60px]"
               required
             />
 
@@ -78,7 +78,7 @@ function Contact() {
               type="number"
               name="Numéro de téléphone :"
               placeholder="Téléphone"
-              className="h-[60px] w-full rounded-lg border border-slate-300 pl-4 placeholder:text-sm placeholder:italic placeholder:opacity-70"
+              className="h-[40px] w-full rounded-lg border border-slate-300 pl-4 placeholder:text-sm placeholder:italic placeholder:opacity-70 lg:h-[60px]"
               required
             />
           </div>
@@ -87,14 +87,14 @@ function Contact() {
             type="email"
             name="Email de contact :"
             placeholder="exemple@domaine.com"
-            className="h-[60px] rounded-lg border border-slate-300 pl-4 placeholder:text-sm placeholder:italic placeholder:opacity-70"
+            className="h-[40px] rounded-lg border border-slate-300 pl-4 placeholder:text-sm placeholder:italic placeholder:opacity-70 lg:h-[60px]"
             required
           />
 
           <select
             id="choix"
             name="Objet de la demande : "
-            className="text-md h-[60px] rounded-lg border border-slate-300 pl-4 text-gray-600 placeholder:text-sm placeholder:italic placeholder:opacity-70"
+            className="text-md h-[40px] rounded-lg border border-slate-300 pl-4 text-gray-600 placeholder:text-sm placeholder:italic placeholder:opacity-70 lg:h-[60px]"
             defaultValue=""
           >
             <option value="" disabled>
@@ -114,7 +114,7 @@ function Contact() {
           <textarea
             id="form-message"
             name="Message :"
-            rows="8"
+            rows={isMobile ? "7" : "10"}
             className="w-full rounded-lg border border-slate-300 pl-4 pt-4 placeholder:text-sm placeholder:italic placeholder:opacity-70"
             placeholder="Votre message"
           />
@@ -123,7 +123,7 @@ function Contact() {
             type="submit"
             className="flex h-[60px] items-center justify-center rounded-lg bg-accent px-3 py-2 font-bold text-white transition hover:bg-accentDarker lg:px-6"
           >
-            Envoyer <IoSend className="ml-2" />
+            Envoyer <RiMailSendLine className="ml-2" size={20} />
           </button>
         </form>
 
