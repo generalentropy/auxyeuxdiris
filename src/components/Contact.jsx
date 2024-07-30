@@ -5,6 +5,7 @@ import { useState } from "react";
 import { web3FormPublicAccessKey } from "../../config/global";
 import { ThreeDots } from "react-loader-spinner";
 import { IoSend } from "react-icons/io5";
+import classNames from "classnames";
 
 function Contact() {
   const [result, setResult] = useState("sending");
@@ -24,17 +25,17 @@ function Contact() {
     const data = await response.json();
 
     if (data.success) {
-      setResult("Envoyé avec succès 🚀");
+      setResult("Message envoyé avec succès 👍");
       event.target.reset();
       setTimeout(() => {
         setResult("");
-      }, 3000);
+      }, 3500);
     } else {
       console.log("Erreur", data);
       setResult(data.message);
       setTimeout(() => {
         setResult("");
-      }, 3000);
+      }, 3500);
     }
   };
 
@@ -126,8 +127,13 @@ function Contact() {
           </button>
         </form>
 
-        <div className="flex h-9 w-full items-center border border-purple-500 py-2 text-sm">
-          <Loader result={result} />
+        <div
+          className={classNames(
+            "flex h-12 w-full items-center justify-center py-2 font-medium text-primary",
+            { "text-green-600": result.includes("succès") },
+          )}
+        >
+          {result === "sending" ? "" : result} <Loader result={result} />
         </div>
       </div>
     </div>
@@ -139,13 +145,12 @@ export default Contact;
 function Loader({ result }) {
   return (
     <>
-      {result === "sending" ? "" : result}
       {result === "sending" && (
         <ThreeDots
           visible={true}
           height="40"
           width="50"
-          color="#F9AD19"
+          color="#132136"
           radius="9"
           ariaLabel="three-dots-loading"
         />
