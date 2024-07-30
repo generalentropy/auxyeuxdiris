@@ -7,7 +7,7 @@ export const geolocationCoords = {
 
 export const faqData = [
   {
-    question: "Qu'est-ce que l'extension de cils ?",
+    question: "Qu'est-ce que l'extension de cils\u00A0?",
     answer:
       "C'est une méthode sud-coréenne datant des années 90, permettant d'allonger, étoffer et courber la base ciliaire, à l'aide de prothèses adaptées à la forme du cil naturel. Ces prothèses (extensions) sont donc collées sur chacun de vos cils naturels adultes, dans le prolongement de celui-ci, à environ un demi millimètre de votre paupière.",
   },

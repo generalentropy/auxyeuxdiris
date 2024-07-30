@@ -2,6 +2,7 @@ import classNames from "classnames";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { faqData } from "../../config/global";
+import { FaChevronDown } from "react-icons/fa";
 
 function Accordion() {
   return (
@@ -27,11 +28,18 @@ function AccordionItem({ question, answer, list }) {
     <div className="flex flex-col gap-2">
       <div
         className={classNames(
-          "flex cursor-pointer select-none rounded-b-2xl rounded-t-2xl bg-accent px-4 py-6 text-xl font-semibold text-white",
+          "text-md flex cursor-pointer select-none justify-between rounded-2xl bg-accent px-4 py-6 font-semibold text-white xs:text-lg lg:text-xl",
         )}
         onClick={() => setIsOpen(!isOpen)}
       >
         <p>{question}</p>
+        <motion.div
+          className="mr-2"
+          animate={{ rotate: isOpen ? 180 : 0 }}
+          transition={{ duration: 0.2 }}
+        >
+          <FaChevronDown size={28} />
+        </motion.div>
       </div>
       <motion.div
         className="overflow-hidden"
