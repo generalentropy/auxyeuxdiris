@@ -8,7 +8,7 @@ import { IoSend } from "react-icons/io5";
 import classNames from "classnames";
 
 function Contact() {
-  const [result, setResult] = useState("sending");
+  const [result, setResult] = useState("");
   const isMobile = useMediaQuery({ maxWidth: 768 }); // tw md breakpoint
 
   const onSubmit = async (event) => {
