@@ -9,7 +9,7 @@ import classNames from "classnames";
 
 function Contact() {
   const [result, setResult] = useState("");
-  const isMobile = useMediaQuery({ maxWidth: 768 }); // tw md breakpoint
+  const isMobile = useMediaQuery({ maxWidth: 768 }); // TW md breakpoint
 
   const onSubmit = async (event) => {
     event.preventDefault();
