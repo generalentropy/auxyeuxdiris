@@ -12,6 +12,7 @@ import Testimonial from "./components/Testimonial";
 import NavigationMap from "./components/NavigationMap";
 import Instagram from "./components/Instagram";
 import OpeningHours from "./components/OpeningHours";
+import Contact from "./components/Contact";
 
 function App() {
   const { isMobileMenuOpen } = useGlobalContext();
@@ -31,6 +32,7 @@ function App() {
         <Instagram />
         <NavigationMap />
         <OpeningHours />
+        <Contact />
       </AppWrapper>
     </>
   );
