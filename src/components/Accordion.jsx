@@ -28,13 +28,13 @@ function AccordionItem({ question, answer, list }) {
     <div className="flex flex-col gap-2">
       <div
         className={classNames(
-          "text-md flex cursor-pointer select-none justify-between rounded-2xl bg-accent px-4 py-6 font-semibold text-white xs:text-lg lg:text-xl",
+          "text-md flex cursor-pointer select-none items-center justify-between rounded-2xl bg-accent px-4 py-6 font-semibold text-white xs:text-lg lg:text-xl",
         )}
         onClick={() => setIsOpen(!isOpen)}
       >
         <p>{question}</p>
         <motion.div
-          className="mr-2"
+          className="ml-2"
           animate={{ rotate: isOpen ? 180 : 0 }}
           transition={{ duration: 0.2 }}
         >
