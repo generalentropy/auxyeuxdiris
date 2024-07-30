@@ -1,4 +1,4 @@
-# Notes
+### Notes
 
 https://usehooks.com/uselockbodyscroll
 
@@ -12,8 +12,12 @@ https://dev.to/rashidshamloo/preventing-the-layout-shift-caused-by-scrollbars-2f
 
 https://ibelick.com/blog/create-shine-effect-on-card-with-tailwind-css
 
-// Carousel
+### Carousel
 
 https://react-slick.neostack.com/
 
 https://alvarotrigo.com/react-fullpage/
+
+### Form
+
+https://docs.web3forms.com/getting-started/customizations/spam-protection/hcaptcha

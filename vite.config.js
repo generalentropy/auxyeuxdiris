@@ -9,6 +9,7 @@ export default defineConfig({
       output: {
         manualChunks: {
           "framer-motion": ["framer-motion"],
+          "react-loader-spinner": ["react-loader-spinner"],
         },
       },
     },
