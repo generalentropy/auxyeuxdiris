@@ -18,43 +18,33 @@ export const faqData = [
       "Les photos présentées ne forment en aucun cas un catalogue : chaque base ciliaire étant variable, une même prestation peut donner un effet différent selon la cliente.",
       "Il est nécessaire de se présenter au RDV parfaitement démaquillée : en cas de maquillage encore présent le RDV sera annulé.",
       "Les accompagnants (enfants, conjoints, animaux, amis...) ne sont pas acceptés lors du RDV, quelle que soit la raison, afin de garantir le calme et la concentration nécessaire pour ce type de prestation.",
-      "Les retards de plus de 20 minutes annuleront ipso facto le RDV.",
-      "Je ne réponds pas aux messages en écriture texto, ou sans aucun effort sur l'orthographe",
-      "RDV non honoré (sans prévenir en amont) = Blacklist, et ce quelles que soient les raisons invoquées",
-      "Pour les prises de RDV remplissage : pensez à anticiper! L’agenda étant particulièrement chargé, il est de votre ressort de prévoir vos RDV. Pour rappel, le délai maximum pour bénéficier de la tarification « remplissage » est 5 semaines (35 jours)",
       "L’extension de cil n’est pas adaptée au maquillage au niveau des yeux, quel qu'il soit. ",
     ],
   },
   {
-    question:
-      "Existe-t-il des contre-indications à porter des extensions de cils ?",
-    answer:
-      "Il est déconseillé de faire des extensions aux personnes souffrant de : ",
+    question: "Réservation / Annulation / RDV non honoré / Retard",
     list: [
-      "Conjonctivites",
-      "Chimiothérapie",
-      "Rehaussement et teinture de cils datant d'il y a moins d'un mois",
-      "Chirurgie des yeux de moins de 3 mois",
-      "Syndrome des yeux secs",
-      "Alopécie des cils",
-      "Allergies oculaires",
-      "Hypersensibilité des yeux",
+      "En cas de RDV non honoré (sans prévenir en amont) = Blacklist, et ce quelles que soient les raisons invoquées",
+      "Les retards de plus de 20 minutes annuleront ipso facto le RDV.",
+      "Je ne réponds pas aux messages en écriture texto, ou sans aucun effort sur l'orthographe",
+      "Pour les prises de RDV remplissage : pensez à anticiper! L’agenda étant particulièrement chargé, il est de votre ressort de prévoir vos RDV. Pour rappel, le délai maximum pour bénéficier de la tarification « remplissage » est 5 semaines (35 jours).",
     ],
   },
+
   {
-    question: "Combien de temps durent les extensions de cils ?",
+    question: "Combien de temps durent les extensions de cils\u00A0?",
     answer:
       "Il s'agit de revenir toutes les 3 à 5 semaines afin de garder l'effet fourni de votre regard, et assurer une bonne rotation entre cils tombés et extensions neuves.",
   },
   {
-    question: "Combien prendre soin de ses extensions cils ?",
+    question: "Combien prendre soin de ses extensions cils\u00A0?",
     answer:
-      " L'hygiène de vie a évidemment un rôle prépondérant dans la durée de vie des extensions. Les recommandations principales sont : ",
+      " L'hygiène de vie a évidemment un rôle prépondérant dans la durée de vie des extensions. Les recommandations principales sont\u00A0: ",
     list: [
       "Dans les 48h suivant la pose d'extensions, éviter tout contact avec eau et vapeur",
       "L’extension de cil n’est pas faite pour être couplée à un maquillage, quel qu’il soit.",
       "Utiliser quotidiennement la brosse fournie lors de chaque RDV afin de discipliner délicatement vos extensions",
-      "Quelques évidences : pas de recourbe-cils, ré-haussement, teinture, éviter un maximum de se frotter les yeux et évidemment pas de mascara !",
+      "Quelques évidences : pas de recourbe-cils, ré-haussement, teinture, éviter un maximum de se frotter les yeux et évidemment pas de mascara\u00A0!",
     ],
   },
 ];
