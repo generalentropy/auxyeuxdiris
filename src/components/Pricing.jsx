@@ -13,7 +13,7 @@ function Pricing() {
       />
 
       <div className="flex justify-center">
-        <div className="mb-10 flex items-center justify-center gap-2 rounded-full bg-accent px-4 py-1 text-center text-sm font-semibold text-white">
+        <div className="mb-10 flex items-center justify-center gap-2 rounded-full bg-sky-400 px-8 py-3 text-center font-semibold text-white lg:text-lg">
           <span className="flex">
             Pour votre confort, salon entièrement climatisé
           </span>

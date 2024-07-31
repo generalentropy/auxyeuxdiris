@@ -103,12 +103,8 @@ function Contact() {
               Sélectionnez l&lsquo;objet du message
             </option>
             <option value="Prise de rendez-vous">Prise de rendez-vous </option>
-            <option value="Demande d'information">
-              Demande d&lsquo;information
-            </option>
-            <option value="Partenariat / stage">Partenariat / stage</option>
-            <option value="Propositions commerciales">
-              Propositions commerciales
+            <option value="Demande d'informations">
+              Demande d&lsquo;informations
             </option>
             <option value="Autre">Autre</option>
           </select>

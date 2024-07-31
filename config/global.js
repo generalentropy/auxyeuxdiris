@@ -33,9 +33,9 @@ export const faqData = [
   {
     question: "Réservation / Annulation / RDV non honoré / Retard",
     list: [
-      "En cas de RDV non honoré (sans prévenir en amont) = Blacklist, et ce quelles que soient les raisons invoquées",
+      "En cas de RDV non honoré (sans prévenir en amont) = Blacklist, et ce quelles que soient les raisons invoquées.",
       "Les retards de plus de 20 minutes annuleront ipso facto le RDV.",
-      "Je ne réponds pas aux messages en écriture texto, ou sans aucun effort sur l'orthographe",
+      "Je ne réponds pas aux messages en écriture texto, ou sans aucun effort sur l'orthographe.",
       "Pour les prises de RDV remplissage : pensez à anticiper! L’agenda étant particulièrement chargé, il est de votre ressort de prévoir vos RDV. Pour rappel, le délai maximum pour bénéficier de la tarification « remplissage » est 5 semaines (35 jours).",
     ],
   },
@@ -50,9 +50,9 @@ export const faqData = [
     answer:
       " L'hygiène de vie a évidemment un rôle prépondérant dans la durée de vie des extensions. Les recommandations principales sont\u00A0: ",
     list: [
-      "Dans les 48h suivant la pose d'extensions, éviter tout contact avec eau et vapeur",
+      "Dans les 48h suivant la pose d'extensions, éviter tout contact avec eau et vapeur.",
       "L’extension de cil n’est pas faite pour être couplée à un maquillage, quel qu’il soit.",
-      "Utiliser quotidiennement la brosse fournie lors de chaque RDV afin de discipliner délicatement vos extensions",
+      "Utiliser quotidiennement la brosse fournie lors de chaque RDV afin de discipliner délicatement vos extensions.",
       "Quelques évidences : pas de recourbe-cils, ré-haussement, teinture, éviter un maximum de se frotter les yeux et évidemment pas de mascara\u00A0!",
     ],
   },
