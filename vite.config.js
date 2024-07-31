@@ -10,6 +10,7 @@ export default defineConfig({
         manualChunks: {
           "framer-motion": ["framer-motion"],
           "react-loader-spinner": ["react-loader-spinner"],
+          "canvas-confetti": ["canvas-confetti"],
         },
       },
     },

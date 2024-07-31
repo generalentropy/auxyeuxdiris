@@ -6,6 +6,7 @@ import { web3FormPublicAccessKey } from "../../config/global";
 import { ThreeDots } from "react-loader-spinner";
 import { RiMailSendLine } from "react-icons/ri";
 import classNames from "classnames";
+import { triggerConfetti } from "../../utils/confetti";
 
 function Contact() {
   const [result, setResult] = useState("");
@@ -25,17 +26,18 @@ function Contact() {
     const data = await response.json();
 
     if (data.success) {
+      triggerConfetti();
       setResult("Message envoyé avec succès 👍");
       event.target.reset();
       setTimeout(() => {
         setResult("");
-      }, 3500);
+      }, 4000);
     } else {
       console.log("Erreur", data);
       setResult(data.message);
       setTimeout(() => {
         setResult("");
-      }, 3500);
+      }, 4000);
     }
   };
 
@@ -129,8 +131,7 @@ function Contact() {
 
         <div
           className={classNames(
-            "flex h-12 w-full items-center justify-center py-2 font-medium text-primary",
-            { "text-green-600": result.includes("succès") },
+            "flex h-12 w-full items-center justify-center py-2 font-medium text-gray-600",
           )}
         >
           {result === "sending" ? "" : result} <Loader result={result} />

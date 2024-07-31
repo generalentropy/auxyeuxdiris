@@ -13,6 +13,7 @@ import NavigationMap from "./components/NavigationMap";
 import Instagram from "./components/Instagram";
 import OpeningHours from "./components/OpeningHours";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   const { isMobileMenuOpen } = useGlobalContext();
@@ -33,6 +34,7 @@ function App() {
         <NavigationMap />
         <OpeningHours />
         <Contact />
+        <Footer />
       </AppWrapper>
     </>
   );
