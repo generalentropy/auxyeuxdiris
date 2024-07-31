@@ -57,7 +57,7 @@ function Contact() {
         </p>
       </div>
 
-      <div className="mb-10 flex w-full max-w-[800px] flex-col items-center justify-center">
+      <div className="flex w-full max-w-[800px] flex-col items-center justify-center">
         <form className="flex w-full flex-col gap-2" onSubmit={onSubmit}>
           <input
             type="hidden"

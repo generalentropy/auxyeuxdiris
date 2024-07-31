@@ -1,3 +1,5 @@
+import { triggerConfetti } from "../../utils/confetti";
+
 const linkStyle = `bg-lightGrey rounded-full px-10 py-3 font-bold text-lg text-primary hover:bg-greyDarker transition-colors hover:text-white`;
 
 function Menu() {
@@ -17,6 +19,7 @@ function Menu() {
           </li>
           <li>
             <img
+              onClick={triggerConfetti}
               src="/images/logo_auxyeuxdiris.svg"
               alt="Logo Aux Yeux d'Iris"
               className="w-38"

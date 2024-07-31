@@ -7,6 +7,13 @@ export const geolocationCoords = {
   lng: -2.125832854067893,
 };
 
+export const socialLinks = {
+  instagram: "https://www.instagram.com/lash_viking/",
+  facebook: "",
+  googleMaps:
+    "https://www.google.com/maps/place/Aux+Yeux+d'Iris+Extensions+de+cils/@47.4303049,-2.1261559,17z/data=!3m1!4b1!4m6!3m5!1s0x480f878061e81e3f:0x67c7d67f0f74ca49!8m2!3d47.4303049!4d-2.1261559!16s%2Fg%2F11dxs0mcnb?entry=tts&g_ep=EgoyMDI0MDcyMy4wKgBIAVAD",
+};
+
 export const faqData = [
   {
     question: "Qu'est-ce que l'extension de cils\u00A0?",

@@ -1,6 +1,7 @@
 import Hamburger from "hamburger-react";
 import { useGlobalContext } from "../../contexts/useGlobalContext";
 import classNames from "classnames";
+import { triggerConfetti } from "../../utils/confetti";
 
 function MobileMenuAndLogo() {
   const { setIsMobileMenuOpen, isMobileMenuOpen } = useGlobalContext();
@@ -24,6 +25,7 @@ function MobileMenuAndLogo() {
           />
         </div>
         <img
+          onClick={triggerConfetti}
           src="/images/logo_auxyeuxdiris.svg"
           alt="Logo Aux Yeux d'Iris"
           className="h-24 xs:h-28"
