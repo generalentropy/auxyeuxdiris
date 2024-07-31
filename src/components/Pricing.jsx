@@ -13,9 +13,11 @@ function Pricing() {
       />
 
       <div className="flex justify-center">
-        <div className="mb-10 flex items-center justify-center gap-2 rounded-full bg-accent px-2 py-1 text-center text-xs font-semibold text-white">
-          <span>Pour votre confort, salon entièrement climatisé</span>
-          <TbAirConditioning size={48} className="hidden" />
+        <div className="mb-10 flex items-center justify-center gap-2 rounded-full bg-accent px-4 py-1 text-center text-sm font-semibold text-white">
+          <span className="flex">
+            Pour votre confort, salon entièrement climatisé
+          </span>
+          <TbAirConditioning size={26} className="hidden md:block" />
         </div>
       </div>
 

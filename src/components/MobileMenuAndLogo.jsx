@@ -25,7 +25,7 @@ function MobileMenuAndLogo() {
           />
         </div>
         <img
-          onClick={triggerConfetti}
+          onClick={() => triggerConfetti("stars")}
           src="/images/logo_auxyeuxdiris.svg"
           alt="Logo Aux Yeux d'Iris"
           className="h-24 xs:h-28"
