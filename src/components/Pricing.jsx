@@ -1,16 +1,23 @@
 import SectionTitle from "./SectionTitle";
 import { cardsData } from "../../config/global";
 import CardDispatcher from "./CardDispatcher";
-
 import { reminderText } from "../../config/global";
+import { TbAirConditioning } from "react-icons/tb";
 
 function Pricing() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col justify-items-center">
       <SectionTitle
         title="Prestations & tarifs"
         subtitle="Les différentes prestations que je vous propose."
       />
+
+      <div className="flex justify-center">
+        <div className="mb-10 flex items-center justify-center gap-2 rounded-full bg-accent px-2 py-1 text-center text-xs font-semibold text-white">
+          <span>Pour votre confort, salon entièrement climatisé</span>
+          <TbAirConditioning size={48} className="hidden" />
+        </div>
+      </div>
 
       <div className="flex justify-center">
         <div className="mb-10 grid grid-cols-1 justify-items-center gap-10 lg:grid-cols-2 xl:grid-cols-3">
