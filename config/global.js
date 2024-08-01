@@ -209,3 +209,6 @@ export const testimonialData = [
     link: "https://maps.app.goo.gl/ghxjP16HwoW87N7h8",
   },
 ];
+
+export const minibio =
+  "Je m'appelle José Chédotal, je suis artisan en pose de prothèse ciliaire depuis 2017. J'ai eu la chance au fils des années de faire demultiples formations et perfectionnements auprès de techniciennes internationales. J'essaie de tendre vers des poses élégantes et raffinées, dans le respect de la base ciliaire de chacune, en proposant des poses d'extensions de cils selon les techniques dites cil à cil et volume russe";

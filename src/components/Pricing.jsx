@@ -2,7 +2,7 @@ import SectionTitle from "./SectionTitle";
 import { cardsData } from "../../config/global";
 import CardDispatcher from "./CardDispatcher";
 import { reminderText } from "../../config/global";
-// import { TbAirConditioning } from "react-icons/tb";
+import { TbAirConditioning } from "react-icons/tb";
 
 function Pricing() {
   return (
@@ -13,11 +13,11 @@ function Pricing() {
       />
 
       <div className="flex justify-center">
-        <div className="mb-10 flex items-center justify-center gap-2 rounded-full bg-sky-400 px-8 py-3 text-center font-semibold text-white lg:text-lg">
-          <span className="flex">
-            Pour votre confort, salon entièrement climatisé ❄️
+        <div className="mb-10 flex items-center justify-center gap-2 rounded-full bg-sky-400 px-12 py-3 text-center font-semibold text-white lg:text-lg">
+          <span className="flex items-center">
+            Pour votre confort, salon entièrement climatisé
+            <TbAirConditioning size={26} className="ml-4" />
           </span>
-          {/* <TbAirConditioning size={26} className="hidden md:block" /> */}
         </div>
       </div>
 

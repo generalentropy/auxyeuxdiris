@@ -14,13 +14,15 @@ import Instagram from "./components/Instagram";
 import OpeningHours from "./components/OpeningHours";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Minibio from "./components/Minibio";
 
 function App() {
-  const { isMobileMenuOpen } = useGlobalContext();
+  const { isMobileMenuOpen, isMiniBioOpen } = useGlobalContext();
 
   return (
     <>
       {isMobileMenuOpen && <MobileMenuOverlay />}
+      {isMiniBioOpen && <Minibio />}
       <AppWrapper>
         <MobileMenuAndLogo />
         <Menu />

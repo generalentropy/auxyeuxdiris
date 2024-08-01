@@ -1,3 +1,6 @@
+import { HiMiniDocumentMagnifyingGlass } from "react-icons/hi2";
+import { useGlobalContext } from "../../contexts/useGlobalContext";
+
 function About() {
   return (
     <div className="mb-10 flex flex-col sm:h-full sm:max-h-[570px] sm:flex-row">
@@ -13,12 +16,12 @@ function About() {
           <div className="text-xl font-light italic text-white sm:text-2xl xl:text-3xl">
             Lash Stylist
           </div>
-          <div className="text-accentDarkest py-4 text-lg font-bold sm:text-xl">
+          <div className="py-4 text-lg font-bold text-accentDarkest sm:text-xl">
             Cil à Cil & Volume Russe
           </div>
         </div>
 
-        <InstaLink />
+        <MinibioButton />
       </div>
       <div className="grow overflow-hidden rounded-b-2xl sm:rounded-none sm:rounded-r-2xl">
         <img
@@ -33,14 +36,17 @@ function About() {
 
 export default About;
 
-function InstaLink({ link }) {
+function MinibioButton({ link }) {
+  const { setIsMiniBioOpen } = useGlobalContext();
+
   return (
     <div className="flex">
       <a
-        className="text-md rounded-full bg-primary px-8 py-2 font-bold text-white xl:px-16 xl:py-3 xl:text-xl"
+        onClick={() => setIsMiniBioOpen(true)}
+        className="text-md h flex items-center justify-center rounded-full bg-primary px-8 py-2 font-bold text-white xl:px-16 xl:py-3 xl:text-xl"
         href={link ? link : "#"}
       >
-        @AuxYeuxdIris
+        Lire plus <HiMiniDocumentMagnifyingGlass className="ml-2" />
       </a>
     </div>
   );
