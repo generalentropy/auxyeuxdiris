@@ -36,18 +36,17 @@ function About() {
 
 export default About;
 
-function MinibioButton({ link }) {
+function MinibioButton() {
   const { setIsMiniBioOpen } = useGlobalContext();
 
   return (
     <div className="flex">
-      <a
+      <div
         onClick={() => setIsMiniBioOpen(true)}
-        className="text-md h flex items-center justify-center rounded-full bg-primary px-8 py-2 font-bold text-white xl:px-16 xl:py-3 xl:text-xl"
-        href={link ? link : "#"}
+        className="text-md h flex cursor-pointer items-center justify-center rounded-full bg-primary px-8 py-2 font-bold text-white xl:px-16 xl:py-3 xl:text-xl"
       >
         Lire plus <HiMiniDocumentMagnifyingGlass className="ml-2" />
-      </a>
+      </div>
     </div>
   );
 }
