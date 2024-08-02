@@ -27,7 +27,7 @@ function Minibio() {
       >
         <IoCloseCircle
           className="absolute right-2 top-2 cursor-pointer text-accent transition-colors hover:text-accentDarker lg:right-5 lg:top-5"
-          size={isMobile ? 32 : 48}
+          size={isMobile ? 36 : 48}
         />
         <p className="text-3xl font-bold capitalize md:text-5xl">à propos</p>
         <p className="text-sm md:text-lg">{minibio}</p>

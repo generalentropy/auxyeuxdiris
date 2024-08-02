@@ -12,8 +12,8 @@ function Pricing() {
       />
 
       <div className="flex justify-center">
-        <div className="mb-5 flex items-center justify-center gap-2 rounded-full bg-sky-400 px-12 py-3 text-center text-sm font-semibold text-white lg:mb-10 lg:text-lg">
-          <span className="flex items-center">
+        <div className="mb-5 flex items-center justify-center gap-2 rounded-full bg-sky-400 px-12 py-3 text-center font-semibold text-white lg:mb-10">
+          <span className="flex items-center lg:text-lg">
             Pour votre confort, salon entièrement climatisé
             <FaRegSnowflake size={22} className="ml-2 hidden md:block" />
           </span>
