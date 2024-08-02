@@ -15,10 +15,10 @@ function Footer() {
           className="sm:h-22 h-24 lg:h-32"
         />
         <div className="flex items-center justify-center gap-6 py-2 lg:py-4">
-          <a href={instagram}>
+          <a href={instagram} aria-label="Nous suivre sur Instagram">
             <img src="icons/instagram.svg" alt="" className={iconStyle} />
           </a>
-          <a href={googleMaps}>
+          <a href={googleMaps} aria-label="Consulter la page Google Maps">
             <img src="icons/google.svg" alt="" className={iconStyle} />
           </a>
         </div>
