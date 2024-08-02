@@ -11,6 +11,7 @@ export default defineConfig({
           "framer-motion": ["framer-motion"],
           "react-loader-spinner": ["react-loader-spinner"],
           "canvas-confetti": ["canvas-confetti"],
+          "react-leaflet": ["react-leaflet"],
         },
       },
     },
