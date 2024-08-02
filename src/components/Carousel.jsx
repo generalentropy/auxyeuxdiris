@@ -6,8 +6,8 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
-import { testimonialData } from "../../config/global";
 import classNames from "classnames";
+import { testimonialData } from "../../data/data";
 
 export function Carousel() {
   return (

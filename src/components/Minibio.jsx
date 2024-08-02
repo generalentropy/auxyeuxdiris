@@ -1,7 +1,7 @@
 import { useLockBodyScroll } from "@uidotdev/usehooks";
 import { useGlobalContext } from "../../contexts/useGlobalContext";
-import { minibio } from "../../config/global";
 import { motion } from "framer-motion";
+import { minibio } from "../../data/data";
 
 function Minibio() {
   useLockBodyScroll();

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import classNames from "classnames";
 import { useState } from "react";
-import { faqData } from "../../config/global";
+import { faqData } from "../../data/data";
 import { FaChevronDown } from "react-icons/fa";
 
 function Accordion() {

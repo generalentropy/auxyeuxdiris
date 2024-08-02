@@ -1,7 +1,8 @@
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
-import { appButtonsData, geolocationCoords } from "../../config/global";
 import { isMobile } from "react-device-detect";
 import { buildGpsLink } from "../../utils/helpers";
+import { geolocationCoords } from "../../config/global";
+import { appButtonsData } from "../../data/data";
 
 function NavigationMap() {
   const { lat, lng } = geolocationCoords;

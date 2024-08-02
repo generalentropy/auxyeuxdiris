@@ -1,4 +1,4 @@
-import { highlightContent } from "../../config/global";
+import { highlightContent } from "../../data/data";
 
 function Highlights() {
   return (

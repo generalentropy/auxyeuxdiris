@@ -1,8 +1,8 @@
 import { FaRegCalendarCheck } from "react-icons/fa6";
-import { hours } from "../../config/global";
 import classNames from "classnames";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 import { FaCircleInfo } from "react-icons/fa6";
+import { hours } from "../../data/data";
 
 function OpeningHours() {
   return (

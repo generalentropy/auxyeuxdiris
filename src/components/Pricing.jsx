@@ -1,8 +1,7 @@
 import SectionTitle from "./SectionTitle";
-import { cardsData } from "../../config/global";
 import CardDispatcher from "./CardDispatcher";
-import { reminderText } from "../../config/global";
 import { TbAirConditioning } from "react-icons/tb";
+import { cardsData, reminderText } from "../../data/data";
 
 function Pricing() {
   return (
