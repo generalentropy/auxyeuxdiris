@@ -99,7 +99,11 @@ function Contact() {
             className="text-md h-[40px] rounded-lg border border-slate-300 pl-4 text-gray-600 placeholder:text-sm placeholder:italic placeholder:opacity-70 lg:h-[60px]"
             defaultValue=""
           >
-            <option value="" disabled>
+            <option
+              value=""
+              disabled
+              aria-label="Sélectionner l'objet du message"
+            >
               Sélectionnez l&lsquo;objet du message
             </option>
             <option value="Prise de rendez-vous">Prise de rendez-vous </option>
