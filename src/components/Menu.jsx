@@ -1,3 +1,4 @@
+import { HashLink } from "react-router-hash-link";
 import { triggerConfetti } from "../../utils/confetti";
 
 const linkStyle = `bg-lightGrey rounded-full px-10 py-3 font-bold text-lg text-primary hover:bg-greyDarker transition-colors hover:text-white`;
@@ -8,14 +9,14 @@ function Menu() {
       <div>
         <ul className="hidden items-center justify-between py-12 xl:flex">
           <li>
-            <a className={linkStyle} href="#">
+            <HashLink smooth className={linkStyle} to="#tarifs">
               Prestations & tarifs
-            </a>
+            </HashLink>
           </li>
           <li>
-            <a className={linkStyle} href="#offers">
+            <HashLink smooth className={linkStyle} to="#faq">
               FAQ
-            </a>
+            </HashLink>
           </li>
           <li>
             <img
@@ -26,14 +27,14 @@ function Menu() {
             />
           </li>
           <li>
-            <a href="#form" className={linkStyle}>
+            <HashLink to="#contact" className={linkStyle}>
               Contact
-            </a>
+            </HashLink>
           </li>
           <li>
-            <a href="#" className={linkStyle}>
+            <HashLink smooth to="#realisations" className={linkStyle}>
               Réalisation
-            </a>
+            </HashLink>
           </li>
         </ul>
       </div>

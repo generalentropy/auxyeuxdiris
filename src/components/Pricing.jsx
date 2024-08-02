@@ -2,10 +2,12 @@ import SectionTitle from "./SectionTitle";
 import CardDispatcher from "./CardDispatcher";
 import { FaRegSnowflake } from "react-icons/fa";
 import { cardsData, reminderText } from "../../data/data";
+import Anchor from "./Anchor";
 
 function Pricing() {
   return (
     <div className="flex flex-col justify-items-center">
+      <Anchor divId="tarifs" />
       <SectionTitle
         title="Prestations & tarifs"
         subtitle="Les différentes prestations que je vous propose."

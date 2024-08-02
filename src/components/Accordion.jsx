@@ -6,7 +6,7 @@ import { FaChevronDown } from "react-icons/fa";
 
 function Accordion() {
   return (
-    <div className="mb-10 flex flex-col justify-center">
+    <div className="justify-cente flex flex-col">
       {faqData.map((item, i) => (
         <AccordionItem
           question={item.question}

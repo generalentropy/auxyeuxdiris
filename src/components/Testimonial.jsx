@@ -3,7 +3,7 @@ import { googleMapsLink } from "../../config/global";
 
 function Testimonial() {
   return (
-    <div className="mb-10">
+    <div>
       <div className="mb-10 flex items-center justify-center rounded-2xl bg-lightGrey px-6 py-12 text-xl font-bold text-primary xs:text-2xl sm:text-4xl lg:text-5xl">
         Elles{" "}
         <img

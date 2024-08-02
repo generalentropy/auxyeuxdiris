@@ -42,7 +42,7 @@ function Contact() {
   };
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center" id="contact">
       <SectionTitle
         title={`Contact`}
         Icon={LuMailQuestion}

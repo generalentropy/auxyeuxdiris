@@ -1,10 +1,11 @@
-import { RiGlassesFill } from "react-icons/ri";
+// import { RiGlassesFill } from "react-icons/ri";
+import { LuGlasses } from "react-icons/lu";
 import { useGlobalContext } from "../../contexts/useGlobalContext";
 import { useMediaQuery } from "react-responsive";
 
 function About() {
   return (
-    <div className="mb-10 flex flex-col sm:h-full sm:max-h-[570px] sm:flex-row">
+    <div className="flex flex-col sm:h-full sm:max-h-[570px] sm:flex-row">
       <div className="flex flex-col items-center justify-around rounded-t-2xl bg-accent py-8 sm:min-w-[50%] sm:rounded-none sm:rounded-l-2xl xl:min-w-[530px]">
         <div className="text-4xl font-bold text-white lg:text-6xl">
           Qui suis-je ?
@@ -47,7 +48,7 @@ function MinibioButton() {
         onClick={() => setIsMiniBioOpen(true)}
         className="text-md h flex cursor-pointer items-center justify-center rounded-full bg-primary px-8 py-2 font-bold text-white xl:px-16 xl:py-3 xl:text-xl"
       >
-        Lire plus <RiGlassesFill className="ml-2" size={isMobile ? 28 : 32} />
+        Lire plus <LuGlasses className="ml-2" size={isMobile ? 17 : 23} />
       </div>
     </div>
   );

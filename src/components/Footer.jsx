@@ -3,11 +3,10 @@ import { socialLinks } from "../../config/global";
 function Footer() {
   const currentYear = new Date().getFullYear();
   const iconStyle = "sm:h-12 h-10 lg:h-14";
-
   const { instagram, googleMaps } = socialLinks;
 
   return (
-    <div className="mb-2 flex items-center justify-center rounded-2xl bg-accent px-2 pb-3 pt-6 sm:pt-10 lg:pt-12">
+    <div className="mb-2 flex items-center justify-center rounded-2xl bg-accent px-2 pb-3 pt-6 sm:pt-10 lg:pb-6 lg:pt-12">
       <div className="flex flex-col items-center justify-center gap-4">
         <img
           src="/images/logo-footer.svg"
