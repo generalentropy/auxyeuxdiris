@@ -3,7 +3,6 @@ import { isMobile } from "react-device-detect";
 import { buildGpsLink } from "../../utils/helpers";
 import { geolocationCoords } from "../../config/global";
 import { appButtonsData } from "../../data/data";
-import "leaflet/dist/leaflet.css";
 
 function NavigationMap() {
   const { lat, lng } = geolocationCoords;
