@@ -15,6 +15,7 @@ import OpeningHours from "./components/OpeningHours";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Minibio from "./components/Minibio";
+import { Suspense } from "react";
 
 function App() {
   const { isMobileMenuOpen, isMiniBioOpen } = useGlobalContext();
@@ -34,7 +35,9 @@ function App() {
         <Testimonial />
         <Faq />
         <Instagram />
-        <NavigationMap />
+        <Suspense fallback={<div>Chargement...</div>}>
+          <NavigationMap />
+        </Suspense>
         <OpeningHours />
         <Contact />
         <Footer />
