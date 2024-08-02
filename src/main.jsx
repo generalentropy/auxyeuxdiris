@@ -4,7 +4,8 @@ import App from "./App.jsx";
 import "./styles/index.css";
 import GlobalProvider from "../contexts/GlobalProvider.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Dashboard from "./components/Dashboard.jsx";
+import AdminDashboard from "./pages/AdminDashboard.jsx";
+import NotFound from "./pages/NotFound.jsx";
 
 const router = createBrowserRouter([
   {
@@ -12,8 +13,13 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/dashboard",
-    element: <Dashboard />,
+    path: "/admin",
+    element: <AdminDashboard />,
+  },
+  {
+    path: "*",
+    element: <NotFound />,
+    // errorElement: <Error />,
   },
 ]);
 
