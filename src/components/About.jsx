@@ -1,4 +1,4 @@
-import { HiMiniDocumentMagnifyingGlass } from "react-icons/hi2";
+import { RiGlassesFill } from "react-icons/ri";
 import { useGlobalContext } from "../../contexts/useGlobalContext";
 
 function About() {
@@ -45,7 +45,7 @@ function MinibioButton() {
         onClick={() => setIsMiniBioOpen(true)}
         className="text-md h flex cursor-pointer items-center justify-center rounded-full bg-primary px-8 py-2 font-bold text-white xl:px-16 xl:py-3 xl:text-xl"
       >
-        Lire plus <HiMiniDocumentMagnifyingGlass className="ml-2" />
+        Lire plus <RiGlassesFill className="ml-2" size={28} />
       </div>
     </div>
   );
