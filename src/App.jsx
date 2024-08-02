@@ -23,6 +23,7 @@ function App() {
     <>
       {isMobileMenuOpen && <MobileMenuOverlay />}
       {isMiniBioOpen && <Minibio />}
+
       <AppWrapper>
         <MobileMenuAndLogo />
         <Menu />
