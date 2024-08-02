@@ -6,11 +6,7 @@ function NotFound() {
       <p>
         <img src="images/j.png" />
       </p>
-      <p className="py-2">Ben euh... comment</p>
-      <p>
-        Je crois que t&lsquo;as pas dû taper la bonne adresse car la page elle
-        existe pas.
-      </p>
+      <p className="py-2 text-lg">Ben euh... comment...</p>
     </div>
   );
 }
