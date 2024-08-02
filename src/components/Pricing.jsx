@@ -1,6 +1,6 @@
 import SectionTitle from "./SectionTitle";
 import CardDispatcher from "./CardDispatcher";
-import { TbAirConditioning } from "react-icons/tb";
+import { FaRegSnowflake } from "react-icons/fa";
 import { cardsData, reminderText } from "../../data/data";
 
 function Pricing() {
@@ -12,10 +12,10 @@ function Pricing() {
       />
 
       <div className="flex justify-center">
-        <div className="mb-10 flex items-center justify-center gap-2 rounded-full bg-sky-400 px-12 py-3 text-center font-semibold text-white lg:text-lg">
+        <div className="mb-5 flex items-center justify-center gap-2 rounded-full bg-sky-400 px-12 py-3 text-center text-sm font-semibold text-white lg:mb-10 lg:text-lg">
           <span className="flex items-center">
             Pour votre confort, salon entièrement climatisé
-            <TbAirConditioning size={26} className="ml-4" />
+            <FaRegSnowflake size={22} className="ml-2 hidden md:block" />
           </span>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import { RiGlassesFill } from "react-icons/ri";
 import { useGlobalContext } from "../../contexts/useGlobalContext";
+import { useMediaQuery } from "react-responsive";
 
 function About() {
   return (
@@ -38,6 +39,7 @@ export default About;
 
 function MinibioButton() {
   const { setIsMiniBioOpen } = useGlobalContext();
+  const isMobile = useMediaQuery({ maxWidth: 768 }); // TW md breakpoint
 
   return (
     <div className="flex">
@@ -45,7 +47,7 @@ function MinibioButton() {
         onClick={() => setIsMiniBioOpen(true)}
         className="text-md h flex cursor-pointer items-center justify-center rounded-full bg-primary px-8 py-2 font-bold text-white xl:px-16 xl:py-3 xl:text-xl"
       >
-        Lire plus <RiGlassesFill className="ml-2" size={28} />
+        Lire plus <RiGlassesFill className="ml-2" size={isMobile ? 28 : 32} />
       </div>
     </div>
   );
