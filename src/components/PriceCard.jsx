@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import { wordsPillToHighlight } from "../../config/global";
 import HighlightWords from "./HighlightWords";
+import { HashLink } from "react-router-hash-link";
 
 function PriceCard({ card }) {
   const { isAccent, price, fillingPrice, flagUrl, title, pill } = card;
@@ -44,7 +45,9 @@ function PriceCard({ card }) {
         {price}€
       </div>
 
-      <div
+      <HashLink
+        to="#contact"
+        smooth
         className={classNames(
           "cursor-pointer rounded-full px-6 py-2 text-base font-bold text-white transition-colors sm:text-xl",
           {
@@ -54,7 +57,7 @@ function PriceCard({ card }) {
         )}
       >
         Réserver
-      </div>
+      </HashLink>
       <div className="flex-grow"></div>
       <div className="w-full p-10">
         <div
