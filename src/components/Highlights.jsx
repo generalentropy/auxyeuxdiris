@@ -2,7 +2,7 @@ import { highlightContent } from "../../data/data";
 
 function Highlights() {
   return (
-    <div className="my-5 grid grid-cols-1 justify-items-center gap-5 md:my-10 md:grid-cols-2 md:gap-10">
+    <div className="my-5 grid grid-cols-1 justify-items-center gap-5 md:grid-cols-2 md:gap-10 lg:my-10">
       {highlightContent.map((el, i) => (
         <Element
           title={el.title}

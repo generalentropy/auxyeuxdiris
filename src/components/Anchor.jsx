@@ -1,10 +1,10 @@
 import classNames from "classnames";
 
-function Anchor({ divId, border }) {
+function Anchor({ divId, border, className }) {
   return (
     <div
       id={divId}
-      className={classNames({ "border border-green-500": border })}
+      className={classNames(className, { "border border-green-500": border })}
     ></div>
   );
 }

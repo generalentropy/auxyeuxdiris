@@ -11,7 +11,7 @@ function NavigationMap() {
   return (
     <>
       <Anchor divId="nous-situer" />
-      <div className="my-10 flex items-center justify-center gap-4 rounded-2xl bg-lightGrey py-10 text-2xl font-bold text-primary sm:text-3xl lg:text-5xl">
+      <div className="my-5 flex items-center justify-center gap-4 rounded-2xl bg-lightGrey py-10 text-2xl font-bold text-primary sm:text-3xl lg:text-5xl">
         <img src="icons/map-route-icon.svg" alt="" className="h-14" />
         Nous situer
       </div>
@@ -35,11 +35,11 @@ function NavigationMap() {
           </Marker>
         </MapContainer>
       </div>
-      <div className="text-md mb-10 flex justify-center rounded-2xl bg-lightGrey px-2 py-10 text-center font-bold text-primary md:text-xl">
+      <div className="text-md mb-3 flex justify-center rounded-2xl bg-lightGrey px-2 py-10 text-center font-bold text-primary md:text-xl lg:mb-10">
         Cliquez sur l&lsquo;icone pour charger l’adresse dans votre application
         GPS préférée
       </div>
-      <div className="mb-10 flex flex-wrap justify-center gap-4 md:gap-10">
+      <div className="mb-5 flex flex-wrap justify-center gap-4 md:gap-10 lg:mb-10">
         {appButtonsData.map((btn, i) => (
           <AppButton key={i} name={btn.name} iconUrl={btn.iconUrl} />
         ))}

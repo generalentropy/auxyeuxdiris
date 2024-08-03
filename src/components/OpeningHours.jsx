@@ -7,7 +7,7 @@ import { hours } from "../../data/data";
 function OpeningHours() {
   return (
     <>
-      <div className="text-md mb-10 flex items-center justify-center rounded-2xl bg-lightGrey py-10 text-center font-bold text-primary xs:text-lg sm:text-3xl lg:text-5xl">
+      <div className="text-md mb-5 flex items-center justify-center rounded-2xl bg-lightGrey py-10 text-center font-bold text-primary xs:text-lg sm:text-3xl lg:mb-10 lg:text-5xl">
         <div className="flex items-center justify-around gap-3">
           <FaRegCalendarCheck size={40} />
           Jours & horaires d’ouverture
@@ -19,7 +19,7 @@ function OpeningHours() {
         ))}
       </div>
 
-      <div className="flex justify-center pb-10">
+      <div className="flex justify-center lg:pb-10">
         <span className="flex w-full max-w-[624px] items-center justify-center gap-2 rounded-2xl bg-primary px-6 py-5 text-center text-sm font-semibold text-white sm:px-10 sm:py-8">
           <FaCircleInfo size={20} className="hidden sm:block" />
           Uniquement sur RDV et sans accompagnant.

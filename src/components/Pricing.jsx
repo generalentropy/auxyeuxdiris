@@ -23,7 +23,7 @@ function Pricing() {
       </div>
 
       <div className="flex justify-center">
-        <div className="mb-10 grid grid-cols-1 justify-items-center gap-10 lg:grid-cols-2 xl:grid-cols-3">
+        <div className="mb-5 grid grid-cols-1 justify-items-center gap-5 lg:mb-10 lg:grid-cols-2 lg:gap-10 xl:grid-cols-3">
           {cardsData.map((card, i) => (
             <CardDispatcher card={card} key={i} />
           ))}
