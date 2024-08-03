@@ -9,7 +9,7 @@ function Menu() {
       <div>
         <ul className="hidden items-center justify-between py-12 xl:flex">
           <li>
-            <HashLink smooth className={linkStyle} to="#tarifs">
+            <HashLink to="#tarifs" className={linkStyle}>
               Prestations & tarifs
             </HashLink>
           </li>
@@ -27,7 +27,7 @@ function Menu() {
             />
           </li>
           <li>
-            <HashLink to="#contact" className={linkStyle}>
+            <HashLink to="#contact" smooth className={linkStyle}>
               Contact
             </HashLink>
           </li>

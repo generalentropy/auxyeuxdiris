@@ -25,6 +25,7 @@
   font-size: 18px !important;
   justify-content: center;
   align-items: center;
+  margin-bottom: 0 !important;
 }
 
 /* Hide Arrows From Input Number */

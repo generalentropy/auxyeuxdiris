@@ -3,13 +3,15 @@ import { isMobile } from "react-device-detect";
 import { buildGpsLink } from "../../utils/helpers";
 import { geolocationCoords } from "../../config/global";
 import { appButtonsData } from "../../data/data";
+import Anchor from "./Anchor";
 
 function NavigationMap() {
   const { lat, lng } = geolocationCoords;
   const target = [lat, lng];
   return (
     <>
-      <div className="mb-10 flex items-center justify-center gap-4 rounded-2xl bg-lightGrey py-10 text-2xl font-bold text-primary sm:text-3xl lg:text-5xl">
+      <Anchor divId="nous-situer" />
+      <div className="my-10 flex items-center justify-center gap-4 rounded-2xl bg-lightGrey py-10 text-2xl font-bold text-primary sm:text-3xl lg:text-5xl">
         <img src="icons/map-route-icon.svg" alt="" className="h-14" />
         Nous situer
       </div>

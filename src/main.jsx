@@ -12,6 +12,7 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
   },
+
   {
     path: "/admin",
     element: <AdminDashboard />,
@@ -19,7 +20,6 @@ const router = createBrowserRouter([
   {
     path: "*",
     element: <NotFound />,
-    // errorElement: <Error />,
   },
 ]);
 

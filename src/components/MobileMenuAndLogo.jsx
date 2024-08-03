@@ -15,9 +15,10 @@ function MobileMenuAndLogo() {
             "text-white": isMobileMenuOpen,
             "rounded-md bg-white bg-opacity-50 text-primary": !isMobileMenuOpen,
           })}
-          onClick={handleOpenMenu}
         >
           <Hamburger
+            toggle={handleOpenMenu}
+            toggled={isMobileMenuOpen}
             rounded
             size={36}
             lineWidth={4}
