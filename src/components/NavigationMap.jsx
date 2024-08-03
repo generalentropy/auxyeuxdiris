@@ -39,7 +39,7 @@ function NavigationMap() {
         Cliquez sur l&lsquo;icone pour charger l’adresse dans votre application
         GPS préférée
       </div>
-      <div className="mb-5 flex flex-wrap justify-center gap-4 md:gap-10 lg:mb-10">
+      <div className="mt-5 flex flex-wrap justify-center gap-4 md:gap-10 lg:mt-10">
         {appButtonsData.map((btn, i) => (
           <AppButton key={i} name={btn.name} iconUrl={btn.iconUrl} />
         ))}

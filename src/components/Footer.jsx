@@ -1,3 +1,4 @@
+import { HashLink } from "react-router-hash-link";
 import { socialLinks } from "../../config/global";
 
 function Footer() {
@@ -23,11 +24,21 @@ function Footer() {
         </div>
         <div>
           <ul className="flex gap-3 text-xs font-semibold text-white xs:text-sm sm:text-lg lg:gap-6 lg:py-2">
-            <li>Tarifs</li>
-            <li>F.A.Q</li>
-            <li>Adresse</li>
-            <li>Horaires</li>
-            <li>Contact</li>
+            <li>
+              <HashLink to="#tarifs">Tarifs</HashLink>
+            </li>
+            <li>
+              <HashLink to="#faq">F.A.Q </HashLink>
+            </li>
+            <li>
+              <HashLink to="#nous-situer">Adresse</HashLink>
+            </li>
+            <li>
+              <HashLink to="#horaires">Horaires</HashLink>
+            </li>
+            <li>
+              <HashLink to="#realisations">Réalisations</HashLink>
+            </li>
           </ul>
         </div>
 

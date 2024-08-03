@@ -3,11 +3,13 @@ import classNames from "classnames";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 import { FaCircleInfo } from "react-icons/fa6";
 import { hours } from "../../data/data";
+import Anchor from "./Anchor";
 
 function OpeningHours() {
   return (
     <>
-      <div className="text-md mb-5 flex items-center justify-center rounded-2xl bg-lightGrey py-10 text-center font-bold text-primary xs:text-lg sm:text-3xl lg:mb-10 lg:text-5xl">
+      <Anchor divId="horaires" />
+      <div className="text-md m-5 flex items-center justify-center rounded-2xl bg-lightGrey py-10 text-center font-bold text-primary xs:text-lg sm:text-3xl lg:m-10 lg:text-5xl">
         <div className="flex items-center justify-around gap-3">
           <FaRegCalendarCheck size={40} />
           Jours & horaires d’ouverture
