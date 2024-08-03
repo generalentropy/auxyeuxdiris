@@ -1,6 +1,7 @@
 import classNames from "classnames";
+import { HashLink } from "react-router-hash-link";
 
-function Button({ link, text, wrapperStyle, buttonStyle, onClick }) {
+function Button({ text, wrapperStyle, buttonStyle, onClick, hashLink }) {
   const handleClick = (e) => {
     if (!onClick) return;
     e.preventDefault();
@@ -9,8 +10,8 @@ function Button({ link, text, wrapperStyle, buttonStyle, onClick }) {
 
   return (
     <div className={classNames("flex", wrapperStyle)}>
-      <a
-        href={`#${link ? link : ""}`}
+      <HashLink
+        to={hashLink}
         onClick={handleClick}
         className={classNames(
           "rounded-lg bg-accent px-8 py-3 font-bold text-white sm:px-14 sm:py-4 sm:text-xl",
@@ -18,7 +19,7 @@ function Button({ link, text, wrapperStyle, buttonStyle, onClick }) {
         )}
       >
         {text}
-      </a>
+      </HashLink>
     </div>
   );
 }

@@ -17,6 +17,7 @@ function Header() {
           </div>
 
           <Button
+            hashLink="#contact"
             text="Réserver"
             buttonStyle={"hover:bg-accentDarker transition-colors"}
           />
