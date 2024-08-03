@@ -18,7 +18,7 @@ function Instagram() {
   return (
     <>
       <Anchor divId="realisations" />
-      <div className="my-10 flex flex-col items-center justify-center rounded-2xl bg-lightGrey py-5 text-primary sm:py-8 lg:flex-row lg:gap-6 lg:py-10">
+      <div className="my-5 flex flex-col items-center justify-center rounded-2xl bg-lightGrey py-5 text-primary sm:py-8 lg:my-10 lg:flex-row lg:gap-6 lg:py-10">
         <span className="bg-gradient-to-r from-[#5B51D8] via-[#E1306C] to-[#FCAF45] bg-clip-text py-1 text-lg font-bold text-transparent xs:text-xl sm:text-3xl md:text-4xl lg:py-2 lg:text-5xl">
           Suivez-nous sur instagram !
         </span>

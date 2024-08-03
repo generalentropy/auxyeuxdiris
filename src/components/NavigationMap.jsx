@@ -15,7 +15,7 @@ function NavigationMap() {
         <img src="icons/map-route-icon.svg" alt="" className="h-14" />
         Nous situer
       </div>
-      <div className="mb-10 h-[600px] w-full overflow-hidden rounded-2xl">
+      <div className="mb-5 h-[600px] w-full overflow-hidden rounded-2xl lg:mb-10">
         <MapContainer
           center={target}
           zoom={12}

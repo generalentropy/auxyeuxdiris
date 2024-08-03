@@ -50,7 +50,7 @@ function Contact() {
         iconSize={isMobile ? 26 : 42}
       />
 
-      <div className="mb-10 flex justify-center text-primary">
+      <div className="mb-5 flex justify-center text-primary lg:mb-10">
         <p className="max-w-[600px] px-4 text-center text-sm md:text-base lg:text-lg">
           Vous souhaitez prendre un rendez-vous&nbsp;? Vous avez des
           questions&nbsp;? Contactez-moi dès maintenant.
