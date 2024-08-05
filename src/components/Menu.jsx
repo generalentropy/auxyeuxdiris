@@ -9,12 +9,12 @@ function Menu() {
       <div>
         <ul className="hidden items-center justify-between py-12 xl:flex">
           <li>
-            <Link href="#tarifs" className={linkStyle}>
+            <Link to="#tarifs" className={linkStyle}>
               Prestations & tarifs
             </Link>
           </li>
           <li>
-            <Link s className={linkStyle} to="#faq">
+            <Link to="#faq" className={linkStyle}>
               FAQ
             </Link>
           </li>

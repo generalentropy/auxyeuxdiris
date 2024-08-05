@@ -15,28 +15,12 @@ import OpeningHours from "./components/OpeningHours";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Minibio from "./components/Minibio";
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
-import { useMediaQuery } from "react-responsive";
+import useScrollToHash from "../hooks/useScrollToHash";
 
 function App() {
   const { isMobileMenuOpen, isMiniBioOpen } = useGlobalContext();
-  const location = useLocation();
-  const isMobile = useMediaQuery({ maxWidth: 768 });
+  useScrollToHash();
 
-  useEffect(() => {
-    if (!location.hash) return;
-
-    const elementId = location.hash.slice(1);
-
-    requestAnimationFrame(() => {
-      const el = document.getElementById(elementId);
-      if (!el) return;
-      el.scrollIntoView({
-        behavior: isMobile ? "instant" : "smooth",
-      });
-    });
-  }, [location, isMobile]);
   return (
     <>
       {isMobileMenuOpen && <MobileMenuOverlay />}
