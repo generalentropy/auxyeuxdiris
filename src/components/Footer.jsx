@@ -1,5 +1,6 @@
 import { socialLinks } from "../../config/global";
 import { Link } from "react-router-dom";
+import { triggerConfetti } from "../../utils/confetti";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -10,6 +11,7 @@ function Footer() {
     <div className="mb-2 flex items-center justify-center rounded-2xl bg-accent px-2 pb-3 pt-6 sm:pt-10 lg:pb-6 lg:pt-12">
       <div className="flex flex-col items-center justify-center gap-4">
         <img
+          onClick={() => triggerConfetti("stars")}
           src="/images/logo-footer.svg"
           alt=""
           className="sm:h-22 h-24 lg:h-32"

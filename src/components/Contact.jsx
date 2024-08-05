@@ -26,7 +26,7 @@ function Contact() {
     const data = await response.json();
 
     if (data.success) {
-      triggerConfetti();
+      triggerConfetti("form");
       setResult("Message envoyé avec succès 👍");
       event.target.reset();
       setTimeout(() => {
