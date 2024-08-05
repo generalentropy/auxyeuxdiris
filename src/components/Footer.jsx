@@ -1,5 +1,5 @@
-import { HashLink } from "react-router-hash-link";
 import { socialLinks } from "../../config/global";
+import { Link } from "react-router-dom";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -25,19 +25,19 @@ function Footer() {
         <div>
           <ul className="flex gap-3 text-xs font-semibold text-white xs:text-sm sm:text-lg lg:gap-6 lg:py-2">
             <li>
-              <HashLink to="#tarifs">Tarifs</HashLink>
+              <Link to="#tarifs">Tarifs</Link>
             </li>
             <li>
-              <HashLink to="#faq">F.A.Q </HashLink>
+              <Link to="#faq">F.A.Q </Link>
             </li>
             <li>
-              <HashLink to="#nous-situer">Adresse</HashLink>
+              <Link to="#nous-situer">Adresse</Link>
             </li>
             <li>
-              <HashLink to="#horaires">Horaires</HashLink>
+              <Link to="#horaires">Horaires</Link>
             </li>
             <li>
-              <HashLink to="#realisations">Réalisations</HashLink>
+              <Link to="#realisations">Réalisations</Link>
             </li>
           </ul>
         </div>
