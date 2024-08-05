@@ -10,7 +10,7 @@ function MobileMenuOverlay() {
   const handleOpenMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
   return (
-    <div className="fixed z-20 flex h-screen w-screen items-center justify-center bg-primary bg-opacity-30 xl:hidden">
+    <div className="fixed z-20 flex h-screen w-screen items-center justify-center bg-primary xl:hidden">
       <nav>
         <ul className="flex max-h-[400px] flex-col items-center justify-center gap-4">
           <li>
@@ -49,7 +49,7 @@ function MobileMenuOverlay() {
             </Link>
           </li>
           <li>
-            <Link className={linkStyle} href="#faq" onClick={handleOpenMenu}>
+            <Link className={linkStyle} to="#faq" onClick={handleOpenMenu}>
               FAQ
             </Link>
           </li>
