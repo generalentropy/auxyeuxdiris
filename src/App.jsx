@@ -25,16 +25,17 @@ function App() {
   const isMobile = useMediaQuery({ maxWidth: 768 });
 
   useEffect(() => {
-    if (location.hash) {
-      const elementId = location.hash.slice(1);
-      const el = document.getElementById(elementId);
+    if (!location.hash) return;
 
-      if (el) {
-        el.scrollIntoView({
-          behavior: isMobile ? "instant" : "smooth",
-        });
-      }
-    }
+    const elementId = location.hash.slice(1);
+
+    requestAnimationFrame(() => {
+      const el = document.getElementById(elementId);
+      if (!el) return;
+      el.scrollIntoView({
+        behavior: isMobile ? "instant" : "smooth",
+      });
+    });
   }, [location, isMobile]);
   return (
     <>
