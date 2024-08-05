@@ -22,7 +22,7 @@ import { useMediaQuery } from "react-responsive";
 function App() {
   const { isMobileMenuOpen, isMiniBioOpen } = useGlobalContext();
   const location = useLocation();
-  const isMobile = useMediaQuery({ maxWidth: 768 }); // TW md breakpoint
+  const isMobile = useMediaQuery({ maxWidth: 768 });
 
   useEffect(() => {
     if (location.hash) {
