@@ -1,6 +1,7 @@
 import { socialLinks } from "../../config/global";
 import { Link } from "react-router-dom";
 import { triggerConfetti } from "../../utils/confetti";
+import { motion } from "framer-motion";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -17,12 +18,20 @@ function Footer() {
           className="sm:h-22 h-24 lg:h-32"
         />
         <div className="flex items-center justify-center gap-6 py-2 lg:py-4">
-          <a href={instagram} aria-label="Nous suivre sur Instagram">
+          <motion.a
+            whileHover={{ scale: 1.2 }}
+            href={instagram}
+            aria-label="Nous suivre sur Instagram"
+          >
             <img src="icons/instagram.svg" alt="" className={iconStyle} />
-          </a>
-          <a href={googleMaps} aria-label="Consulter la page Google Maps">
+          </motion.a>
+          <motion.a
+            whileHover={{ scale: 1.2 }}
+            href={googleMaps}
+            aria-label="Consulter la page Google Maps"
+          >
             <img src="icons/google.svg" alt="" className={iconStyle} />
-          </a>
+          </motion.a>
         </div>
         <div>
           <ul className="flex gap-3 text-xs font-semibold text-white xs:text-sm sm:text-lg lg:gap-6 lg:py-2">

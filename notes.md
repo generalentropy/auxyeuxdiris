@@ -33,3 +33,7 @@ https://docs.web3forms.com/getting-started/customizations/spam-protection/hcaptc
     />
 
 ```
+
+### framer motion
+
+https://www.framer.com/motion/scroll-animations/
