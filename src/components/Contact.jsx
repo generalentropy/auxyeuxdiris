@@ -1,4 +1,3 @@
-import { useMediaQuery } from "react-responsive";
 import SectionTitle from "./SectionTitle";
 import { LuMailQuestion } from "react-icons/lu";
 import { useState } from "react";
@@ -11,8 +10,8 @@ import { useGlobalContext } from "../../contexts/useGlobalContext";
 
 function Contact() {
   const [result, setResult] = useState("");
-  const isMobile = useMediaQuery({ maxWidth: 768 }); // TW md breakpoint
   const { formObject, setFormObject } = useGlobalContext();
+  const { isMobile } = useGlobalContext(); // TW md breakpoint
 
   const handleSelectChange = (event) => {
     const value = event.target.value;

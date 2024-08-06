@@ -4,7 +4,6 @@ import { wordsPillToHighlight } from "../../config/global";
 
 function InfoCard({ card }) {
   const { isAccent, title, text } = card;
-
   const formattedText = HighlightWords(text, wordsPillToHighlight);
 
   return (

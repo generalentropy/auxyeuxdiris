@@ -4,8 +4,8 @@ import { wordsPillToHighlight } from "../../config/global";
 
 function Remove({ card }) {
   const { title, isAccent, iconUrl, pill, price, text } = card;
-
   const formattedText = HighlightWords(text, wordsPillToHighlight);
+
   return (
     <div
       className={classNames(

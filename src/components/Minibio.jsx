@@ -3,12 +3,11 @@ import { useGlobalContext } from "../../contexts/useGlobalContext";
 import { motion } from "framer-motion";
 import { minibio } from "../../data/data";
 import { IoCloseCircle } from "react-icons/io5";
-import { useMediaQuery } from "react-responsive";
 
 function Minibio() {
   useLockBodyScroll();
   const { setIsMiniBioOpen } = useGlobalContext();
-  const isMobile = useMediaQuery({ maxWidth: 768 }); // TW md breakpoint
+  const { isMobile } = useGlobalContext(); // TW md breakpoint
 
   return (
     <div
