@@ -2,10 +2,12 @@ import classNames from "classnames";
 import { wordsPillToHighlight } from "../../config/global";
 import HighlightWords from "./HighlightWords";
 import { Link } from "react-router-dom";
+import { useGlobalContext } from "../../contexts/useGlobalContext";
 
 function PriceCard({ card }) {
   const { isAccent, price, fillingPrice, flagUrl, title, pill } = card;
   const formattedPill = HighlightWords(pill, wordsPillToHighlight);
+  const { setFormObject } = useGlobalContext();
 
   return (
     <div
@@ -47,6 +49,7 @@ function PriceCard({ card }) {
 
       <Link
         to="#contact"
+        onClick={() => setFormObject("Prise de rendez-vous")}
         className={classNames(
           "cursor-pointer rounded-full px-6 py-2 text-base font-bold text-white transition-colors sm:text-xl",
           {

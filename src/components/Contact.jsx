@@ -7,10 +7,17 @@ import { ThreeDots } from "react-loader-spinner";
 import { RiMailSendLine } from "react-icons/ri";
 import classNames from "classnames";
 import { triggerConfetti } from "../../utils/confetti";
+import { useGlobalContext } from "../../contexts/useGlobalContext";
 
 function Contact() {
   const [result, setResult] = useState("");
   const isMobile = useMediaQuery({ maxWidth: 768 }); // TW md breakpoint
+  const { formObject, setFormObject } = useGlobalContext();
+
+  const handleSelectChange = (event) => {
+    const value = event.target.value;
+    setFormObject(value);
+  };
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -97,7 +104,8 @@ function Contact() {
             id="choix"
             name="Objet de la demande : "
             className="text-md h-[40px] rounded-lg border border-slate-300 pl-4 text-gray-600 placeholder:text-sm placeholder:italic placeholder:opacity-70 lg:h-[60px]"
-            defaultValue=""
+            value={formObject}
+            onChange={handleSelectChange}
           >
             <option
               value=""

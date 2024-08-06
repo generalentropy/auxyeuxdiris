@@ -5,15 +5,15 @@ export const GlobalContext = createContext();
 const GlobalProvider = ({ children }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMiniBioOpen, setIsMiniBioOpen] = useState(false);
-  const [poseType, setPoseType] = useState(null);
+  const [formObject, setFormObject] = useState("");
 
   return (
     <GlobalContext.Provider
       value={{
         isMobileMenuOpen,
         setIsMobileMenuOpen,
-        poseType,
-        setPoseType,
+        formObject,
+        setFormObject,
         isMiniBioOpen,
         setIsMiniBioOpen,
       }}
