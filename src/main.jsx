@@ -14,7 +14,7 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "/admin",
+    path: "/dashboard",
     element: <AdminDashboard />,
   },
   {
