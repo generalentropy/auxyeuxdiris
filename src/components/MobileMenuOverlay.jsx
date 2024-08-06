@@ -40,6 +40,11 @@ function MobileMenuOverlay() {
             </Link>
           </li>
           <li>
+            <Link to="#horaires" className={linkStyle} onClick={handleOpenMenu}>
+              Horaires
+            </Link>
+          </li>
+          <li>
             <Link
               to="#realisations"
               className={linkStyle}

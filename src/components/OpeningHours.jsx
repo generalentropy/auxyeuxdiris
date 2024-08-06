@@ -4,15 +4,17 @@ import { capitalizeFirstLetter } from "../../utils/helpers";
 import { FaCircleInfo } from "react-icons/fa6";
 import { hours } from "../../data/data";
 import Anchor from "./Anchor";
+import { useGlobalContext } from "../../contexts/useGlobalContext";
 
 function OpeningHours() {
+  const { isMobile } = useGlobalContext();
   return (
     <>
       <Anchor divId="horaires" />
-      <div className="text-md m-5 flex items-center justify-center rounded-2xl bg-lightGrey py-10 text-center font-bold text-primary xs:text-lg sm:text-3xl lg:m-10 lg:text-5xl">
-        <div className="flex items-center justify-around gap-3">
-          <FaRegCalendarCheck size={40} />
-          Jours & horaires d’ouverture
+      <div className="my-5 flex items-center justify-center rounded-2xl bg-lightGrey py-10 text-center font-bold text-primary xs:text-lg sm:text-3xl lg:my-10 lg:text-5xl">
+        <div className="flex items-center justify-around gap-2 lg:gap-4">
+          <FaRegCalendarCheck size={isMobile ? 30 : 40} />
+          <span> Jours & horaires d’ouverture</span>
         </div>
       </div>
       <div className="flex flex-col justify-center gap-4 pb-10">

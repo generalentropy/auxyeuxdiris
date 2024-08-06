@@ -8,11 +8,12 @@ import Anchor from "./Anchor";
 function NavigationMap() {
   const { lat, lng } = geolocationCoords;
   const target = [lat, lng];
+
   return (
     <>
       <Anchor divId="nous-situer" />
-      <div className="my-5 flex items-center justify-center gap-4 rounded-2xl bg-lightGrey py-10 text-2xl font-bold text-primary sm:text-3xl lg:text-5xl">
-        <img src="icons/map-route-icon.svg" alt="" className="h-14" />
+      <div className="my-5 flex items-center justify-center gap-2 rounded-2xl bg-lightGrey py-10 text-2xl font-bold text-primary sm:text-3xl lg:gap-4 lg:text-5xl">
+        <img src="icons/map-route-icon.svg" alt="" className="h-10 lg:h-14" />
         Nous situer
       </div>
       <div className="mb-5 h-[600px] w-full overflow-hidden rounded-2xl lg:mb-10">

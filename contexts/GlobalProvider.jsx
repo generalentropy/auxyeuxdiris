@@ -1,4 +1,5 @@
 import { createContext, useState } from "react";
+import { useMediaQuery } from "react-responsive";
 
 export const GlobalContext = createContext();
 
@@ -6,6 +7,7 @@ const GlobalProvider = ({ children }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMiniBioOpen, setIsMiniBioOpen] = useState(false);
   const [formObject, setFormObject] = useState("");
+  const isMobile = useMediaQuery({ maxWidth: 768 }); // TW md breakpoint
 
   return (
     <GlobalContext.Provider
@@ -16,6 +18,7 @@ const GlobalProvider = ({ children }) => {
         setFormObject,
         isMiniBioOpen,
         setIsMiniBioOpen,
+        isMobile,
       }}
     >
       {children}

@@ -15,7 +15,7 @@ function Footer() {
           onClick={() => triggerConfetti("stars")}
           src="/images/logo-footer.svg"
           alt=""
-          className="sm:h-22 h-24 lg:h-32"
+          className="sm:h-22 h-24 lg:h-28"
         />
         <div className="flex items-center justify-center gap-6 py-2 lg:py-4">
           <motion.a
