@@ -10,6 +10,7 @@ function AdminDashboard() {
   const { isLoggedIn, setIsLoggedIn, setUser } = useGlobalContext();
   const [loading, setIsLoading] = useState(true);
   const [notificationStatus, setNotificationStatus] = useState(false);
+  const { isMobile } = useGlobalContext();
 
   const handleLogout = async () => {
     try {
@@ -25,7 +26,7 @@ function AdminDashboard() {
 
   const handleToggleSwitch = () => {
     setNotificationStatus(!notificationStatus);
-    toast("Pense à valider les changements", {
+    toast("📌 Pense à valider les changements", {
       id: "validate",
       duration: 3000,
       style: { textAlign: "center" },
@@ -69,7 +70,7 @@ function AdminDashboard() {
         className="absolute right-2 top-2 cursor-pointer"
         onClick={handleLogout}
       >
-        <MdLogout size={32} title="Déconnexion" />
+        <MdLogout size={isMobile ? 32 : 42} title="Déconnexion" />
       </div>
 
       <div className="flex w-full max-w-[600px] flex-col items-center justify-center gap-2 border">
