@@ -8,6 +8,7 @@ const GlobalProvider = ({ children }) => {
   const [isMiniBioOpen, setIsMiniBioOpen] = useState(false);
   const [formObject, setFormObject] = useState("");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [user, setUser] = useState(null);
   const isMobile = useMediaQuery({ maxWidth: 768 }); // TW md breakpoint
 
   return (
@@ -22,6 +23,8 @@ const GlobalProvider = ({ children }) => {
         isMobile,
         isLoggedIn,
         setIsLoggedIn,
+        user,
+        setUser,
       }}
     >
       {children}

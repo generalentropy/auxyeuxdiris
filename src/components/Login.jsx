@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { signIn } from "../../lib/appwriteClient";
+import { getCurrentSession, signIn } from "../../lib/appwriteClient";
 import { ThreeDots } from "react-loader-spinner";
 
 const LoginForm = () => {
@@ -14,6 +14,8 @@ const LoginForm = () => {
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
   };
+
+  getCurrentSession();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -41,7 +43,7 @@ const LoginForm = () => {
     <div className="flex h-screen flex-col items-center justify-center gap-3 bg-gray-200 px-2">
       <form onSubmit={handleSubmit} className="flex flex-col items-end gap-2">
         <div>
-          <label htmlFor="email">Email:</label>
+          <label htmlFor="email">Email :</label>
           <input
             className="ml-2 rounded p-2"
             type="email"
@@ -52,7 +54,7 @@ const LoginForm = () => {
           />
         </div>
         <div>
-          <label htmlFor="password">Password:</label>
+          <label htmlFor="password">Password :</label>
           <input
             className="ml-2 rounded p-2"
             type="password"
