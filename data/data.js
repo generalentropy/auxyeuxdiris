@@ -170,6 +170,38 @@ export const testimonialData = [
     content: "Devenu un rituels, un excellent travail de pro. Merci pour tout.",
     link: "https://maps.app.goo.gl/ghxjP16HwoW87N7h8",
   },
+  {
+    name: "Alexia",
+    picture: "a.png",
+    isRounded: true,
+    content:
+      "Prestation au top et de qualité . Accueil chaleureux. Je recommande ce lieu les yeux fermés",
+    link: "https://maps.app.goo.gl/C6jrpDxSNEUNUEHa9",
+  },
+  {
+    name: "Mi3_ Lor3",
+    picture: "m.png",
+    isRounded: false,
+    content:
+      "Un homme très sympathique, à l'écoute de sa clientèle... sans hésiter je recommande",
+    link: "https://maps.app.goo.gl/P1LJDSmokte4bWBK6",
+  },
+  {
+    name: "Elodie Olliero",
+    picture: "e.png",
+    isRounded: true,
+    content:
+      "Première pose avec José et je suis ravie du résultat. Professionnel, à l'écoute et passionné, je ne peux que recommander!",
+    link: "https://maps.app.goo.gl/tiaVu9FyR4x2Jm5B7",
+  },
+  {
+    name: "Sabrina Bosque",
+    picture: "s.png",
+    isRounded: false,
+    content:
+      "Excellent professionnel,Non seulement vous repartirez avec des yeux de rêve! José est extrêmement sympathique je recommande vivement...",
+    link: "https://maps.app.goo.gl/16gh4XSm6ZN8r2sF9",
+  },
 ];
 
 export const minibio =
