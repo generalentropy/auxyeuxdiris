@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { logout, signIn } from "../../lib/appwriteClient";
 import { ThreeDots } from "react-loader-spinner";
 import { Link } from "react-router-dom";
@@ -9,7 +9,6 @@ const LoginForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-
   const { user, setUser, setIsLoggedIn, isLoggedIn } = useGlobalContext();
 
   const handleEmailChange = (e) => {
@@ -47,7 +46,9 @@ const LoginForm = () => {
     }
   };
 
-  console.log(user, isLoggedIn);
+  useEffect(() => {
+    console.log(user, isLoggedIn);
+  }, [user, isLoggedIn]);
 
   if (isLoading)
     return (
@@ -95,7 +96,7 @@ const LoginForm = () => {
             Login
           </button>
         </form>
-        <div className="flex gap-2">
+        <div className="flex justify-center gap-2">
           <Link
             to="/"
             className="rounded-full bg-gray-500 px-8 py-2 font-bold text-white transition-colors hover:bg-gray-700"
@@ -103,12 +104,14 @@ const LoginForm = () => {
             Retour à l&lsquo;accueil
           </Link>
 
-          <button
-            className="rounded-full bg-red-500 px-8 py-2 font-bold text-white"
-            onClick={handleLogout}
-          >
-            Logout
-          </button>
+          {!setIsLoggedIn && (
+            <button
+              className="rounded-full bg-red-500 px-8 py-2 font-bold text-white"
+              onClick={handleLogout}
+            >
+              Logout
+            </button>
+          )}
         </div>
       </div>
     </div>
