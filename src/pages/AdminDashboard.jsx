@@ -1,8 +1,15 @@
+import { useGlobalContext } from "../../contexts/useGlobalContext";
+import LoginForm from "../components/Login";
+
 function AdminDashboard() {
+  const { isLoggedIn } = useGlobalContext();
   const btnStyle = "bg-accent py-3 px-8 rounded-full text-white";
+
+  if (!isLoggedIn) return <LoginForm />;
 
   return (
     <div className="flex h-screen flex-col items-center justify-center gap-3 bg-gray-200 px-2">
+      <LoginForm />
       <div className="flex w-full"></div>
 
       <div className="flex w-full max-w-[600px] flex-col items-center justify-center gap-2 border">

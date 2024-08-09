@@ -20,3 +20,11 @@ export const wordsPillToHighlight = [
   "gratuite",
   "3 et 5 semaines",
 ];
+
+export const appWrite = {
+  endpoint: "https://cloud.appwrite.io/v1",
+  projectId: "668e3c16000b57d49a8b",
+  databaseId: "66b5e2de000e1df9f2d9",
+  collectionId: "66b5e583002561460712",
+  userCollectionId: "66b5e583002561460712",
+};
