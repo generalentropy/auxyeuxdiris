@@ -104,7 +104,7 @@ const LoginForm = () => {
             to="/"
             className="rounded-full bg-gray-500 px-8 py-2 font-bold text-white transition-colors hover:bg-gray-700"
           >
-            Retour à l&lsquo;accueil
+            Retour au site
           </Link>
 
           {!setIsLoggedIn && (
