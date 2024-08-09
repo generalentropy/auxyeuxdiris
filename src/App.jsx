@@ -16,13 +16,42 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Minibio from "./components/Minibio";
 import useScrollToHash from "../hooks/useScrollToHash";
+import Modal from "./components/Modal";
+import { useEffect } from "react";
+import { fetchDocuments } from "../lib/appwriteClient";
 
 function App() {
-  const { isMobileMenuOpen, isMiniBioOpen } = useGlobalContext();
+  const {
+    isMobileMenuOpen,
+    isMiniBioOpen,
+    isNotificationActive,
+    isNotificationOpen,
+    setIsNotificationActive,
+    setModalContent,
+  } = useGlobalContext();
   useScrollToHash();
+
+  useEffect(() => {
+    const fetchModal = async () => {
+      try {
+        const modalData = await fetchDocuments();
+        if (modalData) {
+          setModalContent(modalData[0]);
+          setIsNotificationActive(modalData[0].modalStatus);
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    fetchModal();
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <>
+      {isNotificationActive && isNotificationOpen && <Modal />}
       {isMobileMenuOpen && <MobileMenuOverlay />}
       {isMiniBioOpen && <Minibio />}
 

@@ -4,6 +4,7 @@ import { ThreeDots } from "react-loader-spinner";
 import { Link } from "react-router-dom";
 
 import { useGlobalContext } from "../../contexts/useGlobalContext";
+import toast from "react-hot-toast";
 
 const LoginForm = () => {
   const [email, setEmail] = useState("");
@@ -37,9 +38,11 @@ const LoginForm = () => {
       const session = await signIn(email, password);
       if (session) setUser(session);
       setIsLoggedIn(true);
+      toast.success("Connexion réussie");
 
       return session;
     } catch (error) {
+      toast.error(error.message);
       return error;
     } finally {
       setIsLoading(false);

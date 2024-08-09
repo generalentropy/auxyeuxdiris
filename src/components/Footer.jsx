@@ -54,12 +54,15 @@ function Footer() {
         </div>
 
         <div className="flex flex-col items-center justify-center px-2 text-center text-xs text-white lg:text-sm">
-          <p>© 2017-{currentYear} | Aux Yeux d&lsquo;Iris </p>
+          <p>
+            © 2017-{currentYear} |{" "}
+            <Link to="/dashboard">Aux Yeux d&lsquo;Iris</Link>{" "}
+          </p>
           <p>
             Entreprise Individuelle enregistrée à la Chambre des Métiers et de
             l&lsquo;Artisanat
           </p>
-          <p>SIRET : 829 575 703 - 47, La Plaie - 44160 Pontchâteau</p>
+          <p>SIRET : 829 575 703 - 47, La Plaie - 44160 Pontchâteau </p>
         </div>
       </div>
     </div>

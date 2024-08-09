@@ -9,6 +9,9 @@ const GlobalProvider = ({ children }) => {
   const [formObject, setFormObject] = useState("");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [user, setUser] = useState(null);
+  const [isNotificationActive, setIsNotificationActive] = useState(false);
+  const [isNotificationOpen, setIsNotificationOpen] = useState(true);
+  const [modalContent, setModalContent] = useState(null);
   const isMobile = useMediaQuery({ maxWidth: 768 }); // TW md breakpoint
 
   return (
@@ -25,6 +28,12 @@ const GlobalProvider = ({ children }) => {
         setIsLoggedIn,
         user,
         setUser,
+        isNotificationActive,
+        setIsNotificationActive,
+        isNotificationOpen,
+        setIsNotificationOpen,
+        modalContent,
+        setModalContent,
       }}
     >
       {children}
