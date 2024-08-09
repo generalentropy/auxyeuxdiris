@@ -7,6 +7,7 @@ function Footer() {
   const currentYear = new Date().getFullYear();
   const iconStyle = "sm:h-12 h-10 lg:h-14";
   const { instagram, googleMaps } = socialLinks;
+  const linkStyle = `hover:underline underline-offset-4 decoration-2`;
 
   return (
     <div className="mb-2 flex items-center justify-center rounded-2xl bg-accent px-2 pb-3 pt-6 sm:pt-10 lg:pb-6 lg:pt-12">
@@ -36,19 +37,29 @@ function Footer() {
         <div>
           <ul className="flex gap-3 text-xs font-semibold text-white xs:text-sm sm:text-lg lg:gap-6 lg:py-2">
             <li>
-              <Link to="#tarifs">Tarifs</Link>
+              <Link to="#tarifs" className={linkStyle}>
+                Tarifs
+              </Link>
             </li>
             <li>
-              <Link to="#faq">F.A.Q </Link>
+              <Link to="#faq" className={linkStyle}>
+                F.A.Q{" "}
+              </Link>
             </li>
             <li>
-              <Link to="#nous-situer">Adresse</Link>
+              <Link to="#nous-situer" className={linkStyle}>
+                Adresse
+              </Link>
             </li>
             <li>
-              <Link to="#horaires">Horaires</Link>
+              <Link to="#horaires" className={linkStyle}>
+                Horaires
+              </Link>
             </li>
             <li>
-              <Link to="#realisations">Réalisations</Link>
+              <Link to="#realisations" className={linkStyle}>
+                Réalisations
+              </Link>
             </li>
           </ul>
         </div>
@@ -56,7 +67,12 @@ function Footer() {
         <div className="flex flex-col items-center justify-center px-2 text-center text-xs text-white lg:text-sm">
           <p>
             © 2017-{currentYear} |{" "}
-            <Link to="/dashboard">Aux Yeux d&lsquo;Iris</Link>{" "}
+            <Link
+              to="/dashboard"
+              className="underline-offset-2 hover:underline"
+            >
+              Aux Yeux d&lsquo;Iris
+            </Link>{" "}
           </p>
           <p>
             Entreprise Individuelle enregistrée à la Chambre des Métiers et de
