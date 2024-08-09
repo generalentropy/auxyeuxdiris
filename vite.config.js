@@ -12,6 +12,7 @@ export default defineConfig({
           "react-loader-spinner": ["react-loader-spinner"],
           "canvas-confetti": ["canvas-confetti"],
           "react-leaflet": ["react-leaflet"],
+          appwrite: ["appwrite"],
         },
       },
     },

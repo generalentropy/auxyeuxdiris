@@ -24,7 +24,8 @@ export const wordsPillToHighlight = [
 export const appWrite = {
   endpoint: "https://cloud.appwrite.io/v1",
   projectId: "668e3c16000b57d49a8b",
-  databaseId: "66b5e2de000e1df9f2d9",
-  collectionId: "66b5e583002561460712",
-  userCollectionId: "66b5e583002561460712",
+  databaseId: "66b62eb0000170e67249",
+  collectionId: "66b62eb9001f9b0cb2a5",
+  documentId: "66b633a4001b1a131d7c",
+  userId: "66b5e26100248945e279",
 };
