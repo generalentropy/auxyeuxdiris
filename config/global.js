@@ -27,5 +27,4 @@ export const appWrite = {
   databaseId: "66b62eb0000170e67249",
   collectionId: "66b62eb9001f9b0cb2a5",
   documentId: "66b633a4001b1a131d7c",
-  userId: "66b5e26100248945e279",
 };

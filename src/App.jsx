@@ -32,7 +32,7 @@ function App() {
 
   return (
     <>
-      {isNotificationActive && isNotificationOpen && <Modal />}
+      {isNotificationActive && isNotificationOpen && <Modal isOpen={true} />}
       {isMobileMenuOpen && <MobileMenuOverlay />}
       {isMiniBioOpen && <Minibio />}
 

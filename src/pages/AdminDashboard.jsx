@@ -1,16 +1,51 @@
 import { useEffect, useState } from "react";
 import { useGlobalContext } from "../../contexts/useGlobalContext";
-import { getCurrentSession, logout } from "../../lib/appwriteClient";
+import {
+  getCurrentSession,
+  logout,
+  updateModaleContent,
+} from "../../lib/appwriteClient";
 import LoginForm from "../components/Login";
 import { ThreeDots } from "react-loader-spinner";
 import toast from "react-hot-toast";
 import { MdLogout } from "react-icons/md";
+import Modal from "../components/Modal";
+import { Link } from "react-router-dom";
 
 function AdminDashboard() {
   const { isLoggedIn, setIsLoggedIn, setUser } = useGlobalContext();
   const [loading, setIsLoading] = useState(true);
   const [notificationStatus, setNotificationStatus] = useState(false);
+  const [modalData, setModalData] = useState({ title: "", content: "" });
   const { isMobile } = useGlobalContext();
+  const [isPreviewOn, setIsPreviewOn] = useState(false);
+
+  const btnStyle =
+    "bg-accent py-3 px-8 rounded-full text-white transition-colors";
+
+  const handleUpdateModalContent = async () => {
+    try {
+      setIsLoading(true);
+      await updateModaleContent(
+        modalData.title,
+        modalData.content,
+        notificationStatus,
+      );
+      toast.success("Contenu mis à jour avec succès");
+    } catch (error) {
+      toast.error("Erreur lors de la mise à jour");
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setModalData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
 
   const handleLogout = async () => {
     try {
@@ -33,22 +68,15 @@ function AdminDashboard() {
     });
   };
 
-  const btnStyle =
-    "bg-accent py-3 px-8 rounded-full text-white transition-colors";
-
   useEffect(() => {
     getCurrentSession()
       .then((res) => {
         if (res) {
-          console.log(res);
           setIsLoggedIn(true);
           setUser(res);
         } else {
           setIsLoggedIn(false);
           setUser(null);
-          toast("Ben euh comment... ya pas de compte de connecté", {
-            duration: 4000,
-          });
           console.log("pas de compte trouvé");
         }
       })
@@ -66,6 +94,15 @@ function AdminDashboard() {
 
   return (
     <div className="flex h-screen flex-col items-center justify-center gap-3 bg-gray-200 px-2">
+      {isPreviewOn && (
+        <Modal
+          title={modalData.title}
+          content={modalData.content}
+          isOpen={isPreviewOn}
+          callback={() => setIsPreviewOn(false)}
+        />
+      )}
+
       <div
         className="absolute right-2 top-2 cursor-pointer"
         onClick={handleLogout}
@@ -93,26 +130,40 @@ function AdminDashboard() {
         <form className="flex w-full flex-col gap-2">
           <input
             type="text"
+            name="title"
+            value={modalData.title}
             className="rounded-2xl border bg-white p-4 placeholder:italic"
             placeholder="Titre de la fenêtre"
+            onChange={handleInputChange}
           ></input>
 
           <textarea
             rows={"6"}
-            type="text"
+            name="content"
+            value={modalData.content}
             className="rounded-2xl border bg-white p-4 placeholder:italic"
             placeholder="Contenu de la fenêtre"
+            onChange={handleInputChange}
           ></textarea>
         </form>
         <div className="flex flex-col gap-4 pt-4 text-sm md:flex-row">
-          <button className={`${btnStyle} hover:bg-accentDarker`}>
+          <button
+            className={`${btnStyle} hover:bg-accentDarker`}
+            onClick={() => setIsPreviewOn(!isPreviewOn)}
+          >
             Afficher l&lsquo;aperçu
           </button>
-          <button className={`${btnStyle} bg-emerald-500 hover:bg-emerald-700`}>
+          <button
+            className={`${btnStyle} bg-emerald-500 hover:bg-emerald-700`}
+            onClick={handleUpdateModalContent}
+          >
             Valider
           </button>
         </div>
       </div>
+      <Link to="/" className={`underline`}>
+        Retour site
+      </Link>
     </div>
   );
 }
