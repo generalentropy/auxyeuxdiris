@@ -62,6 +62,7 @@ const LoginForm = () => {
 
   return (
     <div className="flex h-screen flex-col items-center justify-center gap-3 bg-gray-200">
+      <img src="images/le_g.png" className="h-52 w-auto" />
       <div className="flex flex-col gap-4">
         <form onSubmit={handleSubmit} className="flex flex-col gap-2">
           <div className="flex flex-col items-center">
