@@ -102,7 +102,7 @@ const LoginForm = () => {
         <div className="flex justify-center gap-2">
           <Link
             to="/"
-            className="rounded-full bg-gray-500 px-8 py-2 font-bold text-white transition-colors hover:bg-gray-700"
+            className="w-full rounded-full bg-gray-500 px-8 py-2 text-center font-normal text-white transition-colors hover:bg-gray-700"
           >
             Retour au site
           </Link>
