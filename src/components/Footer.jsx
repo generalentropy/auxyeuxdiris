@@ -7,7 +7,7 @@ function Footer() {
   const currentYear = new Date().getFullYear();
   const iconStyle = "sm:h-12 h-10 lg:h-14";
   const { instagram, googleMaps } = socialLinks;
-  const linkStyle = `hover:underline underline-offset-4 decoration-2`;
+  const linkStyle = `relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-220 after:origin-center`;
 
   return (
     <div className="mb-2 flex items-center justify-center rounded-2xl bg-accent px-2 pb-3 pt-6 sm:pt-10 lg:pb-6 lg:pt-12">
@@ -79,6 +79,20 @@ function Footer() {
             l&lsquo;Artisanat
           </p>
           <p>SIRET : 829 575 703 - 47, La Plaie - 44160 Pontchâteau </p>
+          <p className="mt-2 inline-flex items-center gap-1 italic">
+            Développé en
+            <img
+              src="/icons/france.svg"
+              alt="drapeau français"
+              className="h-3 px-1"
+            />
+            par
+            <a href="https://visualartisan.fr/">
+              <span className="text relative block w-fit font-semibold not-italic after:absolute after:block after:h-[2px] after:w-full after:origin-center after:scale-x-0 after:bg-white after:transition after:duration-200 after:content-[''] after:hover:scale-x-100">
+                VisualArtisan.fr
+              </span>
+            </a>
+          </p>
         </div>
       </div>
     </div>
