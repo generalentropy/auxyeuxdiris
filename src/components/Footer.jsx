@@ -74,7 +74,7 @@ function Footer() {
             l&lsquo;Artisanat
           </p>
           <p>SIRET : 829 575 703 - 47, La Plaie - 44160 Pontchâteau </p>
-          <p className="mt-2 inline-flex items-center gap-1 italic">
+          <p className="mt-2 inline-flex items-center gap-1 text-xs font-semibold italic text-white">
             Développé en
             <img
               src="/icons/france.svg"
@@ -83,8 +83,8 @@ function Footer() {
             />
             par
             <a href="https://visualartisan.fr/">
-              <span className="text relative block w-fit font-semibold not-italic after:absolute after:block after:h-[2px] after:w-full after:origin-center after:scale-x-0 after:bg-white after:transition after:duration-200 after:content-[''] after:hover:scale-x-100">
-                VisualArtisan.fr
+              <span className="text relative block w-fit not-italic after:absolute after:block after:h-[2px] after:w-full after:origin-center after:scale-x-0 after:bg-white after:transition after:duration-200 after:content-[''] after:hover:scale-x-100">
+                Visual·Artisan
               </span>
             </a>
           </p>
