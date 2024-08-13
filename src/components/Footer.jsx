@@ -67,12 +67,7 @@ function Footer() {
         <div className="flex flex-col items-center justify-center px-2 text-center text-xs text-white lg:text-sm">
           <p>
             © 2017-{currentYear} |{" "}
-            <Link
-              to="/dashboard"
-              className="underline-offset-2 hover:underline"
-            >
-              Aux Yeux d&lsquo;Iris
-            </Link>{" "}
+            <Link to="/dashboard">Aux Yeux d&lsquo;Iris</Link>{" "}
           </p>
           <p>
             Entreprise Individuelle enregistrée à la Chambre des Métiers et de
