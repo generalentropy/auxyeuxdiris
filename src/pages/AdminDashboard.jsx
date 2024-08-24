@@ -18,10 +18,7 @@ function AdminDashboard() {
   const [loading, setIsLoading] = useState(true);
   const [notificationStatus, setNotificationStatus] = useState(false);
   const [modalData, setModalData] = useState({ title: "", content: "" });
-  const { isMobile } = useGlobalContext();
   const [isPreviewOn, setIsPreviewOn] = useState(false);
-
-  console.log(user);
 
   const btnStyle =
     "bg-accent py-3 px-8 rounded-full text-white transition-colors";
@@ -72,24 +69,29 @@ function AdminDashboard() {
   };
 
   useEffect(() => {
-    getCurrentSession()
-      .then((res) => {
-        if (res) {
-          setIsLoggedIn(true);
-          setUser(res);
-        } else {
-          setIsLoggedIn(false);
-          setUser(null);
-          console.log("pas de compte trouvé");
-        }
-      })
-      .catch((error) => {
-        console.log(error);
-      })
-      .finally(() => {
-        setIsLoading(false);
-      });
-  }, [setIsLoggedIn, setUser]);
+    if (!isLoggedIn) {
+      getCurrentSession()
+        .then((res) => {
+          if (res) {
+            setIsLoggedIn(true);
+            setUser(res);
+          } else {
+            setIsLoggedIn(false);
+            setUser(null);
+            console.log("Compte utilisateur non trouvé");
+          }
+        })
+        .catch((error) => {
+          console.log(error.message);
+          toast("Accès réservé", { icon: "🔐", id: "private", duration: 1500 });
+        })
+        .finally(() => {
+          setIsLoading(false);
+        });
+    } else {
+      setIsLoading(false);
+    }
+  }, [isLoggedIn, setIsLoggedIn, setUser]);
 
   if (loading) return <LoadingUser />;
 
@@ -106,7 +108,7 @@ function AdminDashboard() {
         />
       )}
 
-      {user?.name && (
+      {user?.name && !loading && (
         <div className="absolute left-2 top-2 flex items-center">
           Bonjour {capitalizeFirstLetter(user.name)}
           👋
@@ -120,7 +122,7 @@ function AdminDashboard() {
         <span className="mr-2 text-xs text-primary md:text-sm">
           Se déconnecter
         </span>
-        <MdLogout size={isMobile ? 32 : 42} title="Déconnexion" />
+        <MdLogout size={32} title="Déconnexion" />
       </div>
 
       <div className="flex w-full max-w-[600px] flex-col items-center justify-center gap-2 border">

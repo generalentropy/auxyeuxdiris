@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { logout, signIn } from "../../lib/appwriteClient";
+import { getCurrentSession, logout, signIn } from "../../lib/appwriteClient";
 import { ThreeDots } from "react-loader-spinner";
 import { Link } from "react-router-dom";
 
@@ -35,13 +35,20 @@ const LoginForm = () => {
     e.preventDefault();
     try {
       setIsLoading(true);
-      const session = await signIn(email, password);
-      if (session) setUser(session);
-      setIsLoggedIn(true);
-      toast.success("Connexion réussie");
 
-      return session;
+      const session = await signIn(email, password);
+
+      if (session) {
+        const userDetails = await getCurrentSession();
+        setUser(userDetails);
+        setIsLoggedIn(true);
+
+        toast.success("Connexion réussie");
+
+        return session;
+      }
     } catch (error) {
+      console.error("Erreur de connexion:", error);
       toast.error(error.message);
       return error;
     } finally {
