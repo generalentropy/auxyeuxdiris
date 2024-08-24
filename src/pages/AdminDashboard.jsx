@@ -11,14 +11,17 @@ import toast from "react-hot-toast";
 import { MdLogout } from "react-icons/md";
 import Modal from "../components/Modal";
 import { Link } from "react-router-dom";
+import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function AdminDashboard() {
-  const { isLoggedIn, setIsLoggedIn, setUser } = useGlobalContext();
+  const { isLoggedIn, setIsLoggedIn, setUser, user } = useGlobalContext();
   const [loading, setIsLoading] = useState(true);
   const [notificationStatus, setNotificationStatus] = useState(false);
   const [modalData, setModalData] = useState({ title: "", content: "" });
   const { isMobile } = useGlobalContext();
   const [isPreviewOn, setIsPreviewOn] = useState(false);
+
+  console.log(user);
 
   const btnStyle =
     "bg-accent py-3 px-8 rounded-full text-white transition-colors";
@@ -61,7 +64,7 @@ function AdminDashboard() {
 
   const handleToggleSwitch = () => {
     setNotificationStatus(!notificationStatus);
-    toast("📌 Pense à valider les changements", {
+    toast("📌 Penser à valider les changements", {
       id: "validate",
       duration: 3000,
       style: { textAlign: "center" },
@@ -103,10 +106,20 @@ function AdminDashboard() {
         />
       )}
 
+      {user?.name && (
+        <div className="absolute left-2 top-2 flex items-center">
+          Bonjour {capitalizeFirstLetter(user.name)}
+          👋
+        </div>
+      )}
+
       <div
-        className="absolute right-2 top-2 cursor-pointer"
+        className="absolute right-2 top-2 flex cursor-pointer items-center"
         onClick={handleLogout}
       >
+        <span className="mr-2 text-xs text-primary md:text-sm">
+          Se déconnecter
+        </span>
         <MdLogout size={isMobile ? 32 : 42} title="Déconnexion" />
       </div>
 
