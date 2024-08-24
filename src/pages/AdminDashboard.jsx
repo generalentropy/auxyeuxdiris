@@ -110,8 +110,7 @@ function AdminDashboard() {
 
       {user?.name && !loading && (
         <div className="absolute left-2 top-2 flex items-center">
-          Bonjour {capitalizeFirstLetter(user.name)}
-          👋
+          Bonjour {capitalizeFirstLetter(user.name)} 👋
         </div>
       )}
 
