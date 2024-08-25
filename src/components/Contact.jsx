@@ -30,6 +30,7 @@ function Contact() {
     });
 
     const data = await response.json();
+    console.log(data);
 
     if (data.success) {
       triggerConfetti("form");
@@ -93,7 +94,7 @@ function Contact() {
 
           <input
             type="email"
-            name="Email de contact :"
+            name="email"
             placeholder="exemple@domaine.com"
             className="h-[40px] rounded-lg border border-slate-300 pl-4 placeholder:text-sm placeholder:italic placeholder:opacity-70 lg:h-[60px]"
             required
