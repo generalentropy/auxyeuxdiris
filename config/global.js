@@ -1,6 +1,7 @@
 export const googleMapsLink = "https://maps.app.goo.gl/9vbBcxskN4h8nJLSA";
 
-export const web3FormPublicAccessKey = "ad35e47e-11bc-4ced-8287-268b40822a9b";
+// ad35e47e-11bc-4ced-8287-268b40822a9b
+export const web3FormPublicAccessKey = "fb924a8a-9fa5-4252-99c2-751bdf2d8187";
 
 export const geolocationCoords = {
   lat: 47.430238723421134,
