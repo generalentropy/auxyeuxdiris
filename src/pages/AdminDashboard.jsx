@@ -130,7 +130,7 @@ function AdminDashboard() {
 
       <div className="flex w-full max-w-[600px] flex-col items-center justify-center gap-2 border">
         {modalContent !== null && (
-          <p className="mb-4 rounded-full bg-greyDarker px-6 py-2 text-sm">
+          <p className="mb-4 rounded-full bg-greyDarker px-6 py-2 text-center text-xs xs:text-sm">
             État actuel de la fenêtre :{" "}
             {modalContent.modalStatus ? "Activée" : "Désactivée"}
           </p>
