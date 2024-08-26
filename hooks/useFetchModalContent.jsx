@@ -6,10 +6,10 @@ const useFetchModalContent = () => {
   const { setModalContent, setIsNotificationActive } = useGlobalContext();
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [trigger, setTrigger] = useState(0); // Variable pour déclencher le refetch
+  const [trigger, setTrigger] = useState(0);
 
   const refetch = useCallback(() => {
-    setTrigger((prev) => prev + 1); // Incrémente pour déclencher l'effet
+    setTrigger((prev) => prev + 1);
   }, []);
 
   useEffect(() => {
@@ -38,9 +38,9 @@ const useFetchModalContent = () => {
     return () => {
       isMounted = false;
     };
-  }, [setModalContent, setIsNotificationActive, trigger]); // Ajout de trigger dans les dépendances
+  }, [setModalContent, setIsNotificationActive, trigger]);
 
-  return { loading, error, refetch }; // Renvoie refetch pour permettre un déclenchement manuel
+  return { loading, error, refetch };
 };
 
 export default useFetchModalContent;
