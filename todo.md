@@ -2,9 +2,11 @@
 
 📌 API : update allowed hostname/subdomains.
 
+📌 Open Graph
+
 ### Low priority
 
-📌 Update logic for preview/current notification window.
+~~📌 Update logic for preview/current notification window.~~
 
 📌 Split bundle.
 
