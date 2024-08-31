@@ -1,6 +1,6 @@
 # Aux Yeux d'Iris V2 - 2024
 
-💻 https://clever-capybara-730883.netlify.app/
+💻 https://auxyeuxdiris.fr/
 
 ![website](https://i.imgur.com/jaSVbiw.jpeg)
 
